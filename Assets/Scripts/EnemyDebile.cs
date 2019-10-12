@@ -10,8 +10,7 @@ public class EnemyDebile : MonoBehaviour
     public class MeleeUnitRatio
     {
         public MeleeUnit meleeUnit;
-        public float ratio;
-
+        public float ratio = 1;
     }
     public List<MeleeUnitRatio> listToSpawnWithRatio = null;
     public float chanceToSpawnEnemybySecond = 1;
@@ -28,21 +27,21 @@ public class EnemyDebile : MonoBehaviour
         listToSpawnWithRatio.ForEach(e => totalRatio += e.ratio);
     }
 
-    MeleeUnit chooseUnit()
+    GameObject chooseUnit()
     {
         float rand = Random.Range (0f, totalRatio);
         foreach (var unit in listToSpawnWithRatio)
         {
             if ((rand -= unit.ratio) < 0)
-                return (unit.meleeUnit);
+                return (unit.meleeUnit.gameObject);
         }
-        return (listToSpawnWithRatio.LastOrDefault().meleeUnit);
+        return (listToSpawnWithRatio.LastOrDefault().meleeUnit.gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Time.deltaTime > Random.Range(0f, 1f / chanceToSpawnEnemybySecond))
-            spawner.unityInvoke(chooseUnit());
+            spawner.unitInvoke(chooseUnit(), true);
     }
 }

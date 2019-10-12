@@ -16,6 +16,8 @@ public class MeleeUnit : MonoBehaviour
     Vector3 lanepos;
     bool moving = true;
 
+    Animator        animator;
+
     public GameObject weapon;
 
     // Start is called before the first frame update
@@ -32,15 +34,29 @@ public class MeleeUnit : MonoBehaviour
         // boxCol.center = new Vector3(direction * boxCol.center.x, boxCol.center.y, boxCol.center.z);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3(0, 5 * lane, 0);
-            transform.position = new Vector3(transform.position.x, lanepos.y, lanepos.z);
+            transform.position = new Vector3(GetSpawnX(), 0, 5 * lane);
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            lanepos = new Vector3(0, 5, 0);
-            transform.position = new Vector3(transform.position.x, lanepos.y, lanepos.z);
+            transform.position = new Vector3(GetSpawnX(), 0, 0);
         }
         GameManager.instance.changeMode.AddListener(ChangeMode);
+
+        animator = GetComponent<Animator>();
+    }
+
+    float GetSpawnX()
+    {
+        if (gameObject.tag == "friendly")
+            return GameManager.instance.playerSpawnPosition.position.x;
+        else
+            return GameManager.instance.enemiesSpawnPosition.position.x;
+    }
+
+    public void Tapping()
+    {
+        AudioManager.instance.PlaySwordClash();
+        weapon.SetActive(true);
     }
 
     public void TakeDamage(int dmg)
@@ -62,13 +78,13 @@ public class MeleeUnit : MonoBehaviour
     {
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3(0, 5 * lane, 0);
+            lanepos = new Vector3(0, 0, GameManager.instance.laneInterval * lane);
             transform.position = new Vector3(transform.position.x - 0.3f * direction, lanepos.y, lanepos.z);
 
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            lanepos = new Vector3(0, 5, 0);
+            lanepos = new Vector3(0, 0.5f, 0);
             transform.position = new Vector3(transform.position.x - 0.3f * direction, lanepos.y, lanepos.z);
 
         }
@@ -76,18 +92,9 @@ public class MeleeUnit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tapper)
-        {
-            cur -= Time.deltaTime;
-            if (cur < 0)
-            {
-                weapon.SetActive(true);
-                cur = atkspeed;
-            }
-        }
+         animator.SetBool("isTopDown", GameManager.instance.mode == ViewMode.TopDown);
     }
 
-    bool tapper = false;
     float atkspeed = 2f;
     float cur = 2f;
 
@@ -95,22 +102,10 @@ public class MeleeUnit : MonoBehaviour
     {
         if (other.gameObject.tag != this.gameObject.tag)
         {
-            // animator.settrigger("attack");
-            tapper = true;
+            Debug.Log("Stay !");
+            animator.SetTrigger("isTapping");
         }
     }
-
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag != this.gameObject.tag)
-        {
-            // animator.settrigger("attack");
-            tapper = false;
-        }
-    }
-
-
 
     void FixedUpdate()
     {
@@ -118,7 +113,7 @@ public class MeleeUnit : MonoBehaviour
 
         Debug.DrawLine(transform.position, new Vector3(transform.position.x + 0.8f * direction, transform.position.y, transform.position.z), Color.green);
 
-        if (Physics.Raycast(transform.position, new Vector3(1 * direction, 0, 0), out hit, 0.8f) == true)
+        if (Physics.Raycast(transform.position, new Vector3(1 * direction, 0, 0), out hit, 0.3f) == true)
         {
             moving = false;
         }

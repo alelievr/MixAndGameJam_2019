@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    Animator    animator;
+
+    void Start()
+    {
+        animator = GetComponentInParent<Animator>();
+    }
+
     public int damage = 2;
     void OnTriggerEnter(Collider other)
     {
@@ -14,8 +21,6 @@ public class Weapon : MonoBehaviour
             Debug.DrawRay(transform.position, Vector3.up, Color.green);
             hit.TakeDamage(damage);
             gameObject.SetActive(false);
-
-            AudioManager.instance.PlaySwordClash();
         }
     }
 }

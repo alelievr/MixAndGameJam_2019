@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum UnitType
+{
+    Melee,
+    Bow,
+    // Fly,
+    // Tank,
+}
+
 public class GUI_manager : MonoBehaviour
 {
-
     [System.Serializable]
     public class Unit
     {
-        public int    id;
+        public UnitType    id;
         public Sprite sprite;
         public string name;
+        public GameObject meleeUnit;
     }
 
     [System.Serializable]
@@ -32,6 +40,8 @@ public class GUI_manager : MonoBehaviour
     public List<Unit> unitList = new List<Unit>();
     public List<Line> Lines;
 
+    Spawner           spawner;
+
     //private List<GameObject> usableUnitList = new List<GameObject>();
 
     // Start is called before the first frame update
@@ -44,6 +54,8 @@ public class GUI_manager : MonoBehaviour
             tmp.GetComponent<Image>().sprite = unit.sprite;
             tmp.GetComponent<Button>().onClick.AddListener(() => UnitOnClick(unit.id));
         }
+
+        spawner = GetComponent< Spawner >();
     }
 
     // Update is called once per frame
@@ -59,30 +71,32 @@ public class GUI_manager : MonoBehaviour
         }
         else if (Input.GetKeyDown("q"))
         {
-            UnitOnClick(1);
+            UnitOnClick(UnitType.Melee);
         }
         else if (Input.GetKeyDown("w"))
         {
-            UnitOnClick(2);
+            UnitOnClick(UnitType.Bow);
         }
         else if (Input.GetKeyDown("e"))
         {
-            UnitOnClick(3);
+            // UnitOnClick();
         }
         else if (Input.GetKeyDown("r"))
         {
-            UnitOnClick(4);
+            // UnitOnClick(4);
         }
         else if (Input.GetKeyDown("t"))
         {
-            UnitOnClick(5);
+            // UnitOnClick(5);
         }
     }
 
-    void UnitOnClick(int id) {
+    void UnitOnClick(UnitType id) {
         Unit unit = unitList.Find(x => x.id == id);
-        if (unit != null) {
+        if (unit != null)
+        {
             Debug.Log(unit.name);
+            spawner.unitInvoke(unit.meleeUnit, false);
         }
     }
 

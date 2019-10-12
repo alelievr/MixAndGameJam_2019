@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     public UnityEvent changeMode = new UnityEvent();
     public static GameManager instance = null;
 
+    public Transform            playerSpawnPosition;
+    public Transform            enemiesSpawnPosition;
+
     public ViewMode            mode { get; private set; } = ViewMode.SideScroll;
 
     // two lanes are between 0

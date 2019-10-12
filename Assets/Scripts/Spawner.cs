@@ -5,10 +5,17 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public int nblane = 2;
-    public void unityInvoke(MeleeUnit unit)
+    public void unitInvoke(GameObject unit, bool enemy)
     {
-        GameObject.Instantiate(unit);
-        unit.lane = Random.Range(0, nblane) + 1; 
+        var o = GameObject.Instantiate(unit);
+        o.GetComponent<MeleeUnit>().lane = Random.Range(0, nblane) + 1; 
+
+        if (enemy)
+        {
+            o.tag = "ennemy";
+            foreach (Transform c in o.transform)
+                c.gameObject.tag = "ennemy";
+        }
     }
 
 }

@@ -16,7 +16,6 @@ public class AudioManager : MonoBehaviour
     void Awake()
     {
         source = GetComponent< AudioSource >();
-        DontDestroyOnLoad(this);
         instance = this;
     }
 
@@ -29,9 +28,4 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySwordClash() => PlayRandomAudioClip(swordClashes);
     public void PlayUnitDying() => PlayRandomAudioClip(unitDying);
-
-    void Update()
-    {
-        
-    }
 }

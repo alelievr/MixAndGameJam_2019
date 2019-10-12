@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &630231950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579526871169598293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422621a75dc8842a7aed322db2d26eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nblane: 2
 --- !u!1 &4143369763840619471
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +621,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
         type: 3}
+      propertyPath: unitList.Array.data[0].id
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[0].meleeUnit
+      value: 
+      objectReference: {fileID: 2969325133599162811, guid: b7d30c8f47d8e4cdf96391247312e71d,
+        type: 3}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[1].id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[1].meleeUnit
+      value: 
+      objectReference: {fileID: 2969325133599162811, guid: b7d30c8f47d8e4cdf96391247312e71d,
+        type: 3}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
       propertyPath: Lines.Array.data[1].color.r
       value: 0.1764706
       objectReference: {fileID: 0}
@@ -736,8 +771,19 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8421213907723591388, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 42
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76fb07f798aff432886022323e3c1e3b, type: 3}
+--- !u!1 &3579526871169598293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8421213906032841457, guid: 76fb07f798aff432886022323e3c1e3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5004380820164399524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3579526871169598292 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8421213906032841456, guid: 76fb07f798aff432886022323e3c1e3b,
@@ -750,7 +796,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5004380820164399524}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3579526871169598293}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e24732338c5c4a4386e56b5f1c36370, type: 3}
