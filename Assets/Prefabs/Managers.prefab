@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 8188166739144552847}
   - component: {fileID: 8188166739144552844}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -339,3 +339,5 @@ MonoBehaviour:
   changeMode:
     m_PersistentCalls:
       m_Calls: []
+  laneInterval: 2
+  laneWidth: 15

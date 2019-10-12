@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
 
     public ViewMode            mode { get; private set; } = ViewMode.SideScroll;
 
+    // two lanes are between 0
+    public int      laneInterval;
+    public int      laneWidth;
+
     void Awake()
     {
         if (instance != null)
