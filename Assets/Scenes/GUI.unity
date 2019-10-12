@@ -281,6 +281,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
         type: 3}
+      propertyPath: unitList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
       propertyPath: Lines.Array.data[1].color.r
       value: 0.1764706
       objectReference: {fileID: 0}
@@ -293,6 +298,28 @@ PrefabInstance:
         type: 3}
       propertyPath: Lines.Array.data[1].color.b
       value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: unitList.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 3557239672412980601, guid: 077c7d5f655e2492ab44bdff1cb3894b,
+        type: 3}
+    - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: unitList.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: -8953561970649121233, guid: b8fc9298059f94db3b37e2201f539d5a,
+        type: 3}
+    - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: unitList.Array.data[0].name
+      value: knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: unitList.Array.data[1].name
+      value: archer
       objectReference: {fileID: 0}
     - target: {fileID: 4940191508456343042, guid: da04b13f8f224425a93fd8d45f275abb,
         type: 3}

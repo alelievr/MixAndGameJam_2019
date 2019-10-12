@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
 
     void PlayRandomAudioClip(AudioClip[] clips)
     {
-        var clip = clips.Skip(Random.Range(0, swordClashes.Length)).First();
+        var clip = clips.OrderBy(b => Random.value).First();
 
         source.PlayOneShot(clip);
     }

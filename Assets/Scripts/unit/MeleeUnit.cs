@@ -48,10 +48,14 @@ public class MeleeUnit : MonoBehaviour
         health -= dmg;
         if (health <= 0)
             DeathIsNow();
+        
+        // TODO: feedback when taking damage !
     }
 
     void DeathIsNow()
     {
+        AudioManager.instance.PlayUnitDying();
+
         Destroy(gameObject);
     }
     void ChangeMode()
@@ -81,9 +85,6 @@ public class MeleeUnit : MonoBehaviour
                 cur = atkspeed;
             }
         }
-
-
-
     }
 
     bool tapper = false;

@@ -198,14 +198,13 @@ MonoBehaviour:
   itemPanel: {fileID: 8421213907334307149}
   unitList:
   - id: 1
-    sprite: {fileID: 21300000, guid: 51cbf6e0aefa3464ba1c716d3be413aa, type: 3}
-    name: gemme
+    sprite: {fileID: 3557239672412980601, guid: 077c7d5f655e2492ab44bdff1cb3894b,
+      type: 3}
+    name: knight
   - id: 2
-    sprite: {fileID: 21300000, guid: b6adf1cf14f6d464194562461987edf1, type: 3}
-    name: tools
-  - id: 3
-    sprite: {fileID: 21300000, guid: 350f2e489c1d0458db18e969f67cb28a, type: 3}
-    name: wood
+    sprite: {fileID: -8953561970649121233, guid: b8fc9298059f94db3b37e2201f539d5a,
+      type: 3}
+    name: archer
   Lines:
   - id: 1
     color: {r: 1, g: 0, b: 0, a: 1}

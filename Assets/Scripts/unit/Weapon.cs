@@ -14,6 +14,8 @@ public class Weapon : MonoBehaviour
             Debug.DrawRay(transform.position, Vector3.up, Color.green);
             hit.TakeDamage(damage);
             gameObject.SetActive(false);
+
+            AudioManager.instance.PlaySwordClash();
         }
     }
 }
