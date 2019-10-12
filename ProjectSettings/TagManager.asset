@@ -8,6 +8,7 @@ TagManager:
   - friendly
   - ennemy
   - bam
+  - FadeTranstion
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: GUI
+    uniqueID: 3593496291
     locked: 0

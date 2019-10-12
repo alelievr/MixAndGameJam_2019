@@ -610,6 +610,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 4143369765430200108}
+    - target: {fileID: 8421213906032841461, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841461, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -701471005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76fb07f798aff432886022323e3c1e3b, type: 3}
