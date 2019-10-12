@@ -3,47 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public enum ViewMode
+{
+    SideScroll,
+    TopDown,
+}
+
 public class GameManager : MonoBehaviour
 {
-    float timeBeforeCall = 2.0f;
-    float timer;
-    public UnityEvent changeEvent = null;
-    public GameManager instance = null;
+    public UnityEvent changeMode = new UnityEvent();
+    public static GameManager instance = null;
 
-    // Start is called before the first frame update
-    void Start()
+    public ViewMode            mode { get; private set; } = ViewMode.SideScroll;
+
+    void Awake()
     {
-        if (instance != null){
+        if (instance != null)
             Destroy(gameObject);
-        }
         else
-        {
             instance = this;
-        }
 
-        if (changeEvent == null)
-        {
-            changeEvent = new UnityEvent();
-            
-        }
-        changeEvent.AddListener(CallForChange);
-        timer = timeBeforeCall;
         DontDestroyOnLoad(this);
     }
 
-    void CallForChange()
+    public void SwitchMode()
     {
-        Debug.Log("ITS TIME FOR CHANGE!!!");
+        changeMode.Invoke();
+        mode = mode == ViewMode.SideScroll ? ViewMode.TopDown : ViewMode.SideScroll;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer < 0)
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            changeEvent.Invoke();
-            timer = timeBeforeCall;
+            SwitchMode();
         }
     }
 }
