@@ -7,6 +7,7 @@ TagManager:
   - melee
   - friendly
   - ennemy
+  - bam
   layers:
   - Default
   - TransparentFX
