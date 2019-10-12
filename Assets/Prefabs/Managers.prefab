@@ -339,5 +339,5 @@ MonoBehaviour:
   changeMode:
     m_PersistentCalls:
       m_Calls: []
-  laneInterval: 3
-  laneWidth: 3
+  laneInterval: 2
+  laneWidth: 15
