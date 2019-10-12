@@ -1,0 +1,3376 @@
+fileFormatVersion: 2
+guid: 7870dacd49a1845ed802bb51bf67ea74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1194648815412178205
+    second: twilight-tiles_0
+  - first:
+      213: -5916002697336558481
+    second: twilight-tiles_1
+  - first:
+      213: -2106365530219346251
+    second: twilight-tiles_2
+  - first:
+      213: -6244348304254386556
+    second: twilight-tiles_3
+  - first:
+      213: 5125490609276229119
+    second: twilight-tiles_4
+  - first:
+      213: 2389202097705884330
+    second: twilight-tiles_5
+  - first:
+      213: 3940042661670660477
+    second: twilight-tiles_6
+  - first:
+      213: 7452907181594168173
+    second: twilight-tiles_7
+  - first:
+      213: -3773664078212513077
+    second: twilight-tiles_8
+  - first:
+      213: -8364101565552345486
+    second: twilight-tiles_9
+  - first:
+      213: -4653672329006296926
+    second: twilight-tiles_10
+  - first:
+      213: -4277103367590648645
+    second: twilight-tiles_11
+  - first:
+      213: -8051996081199262540
+    second: twilight-tiles_12
+  - first:
+      213: -8296427591694488098
+    second: twilight-tiles_13
+  - first:
+      213: -7080315100131637067
+    second: twilight-tiles_14
+  - first:
+      213: 7311422724621621091
+    second: twilight-tiles_15
+  - first:
+      213: 5734570527505156476
+    second: twilight-tiles_16
+  - first:
+      213: -6178668342730319714
+    second: twilight-tiles_17
+  - first:
+      213: 6848481922046148209
+    second: twilight-tiles_18
+  - first:
+      213: 3502770263718073052
+    second: twilight-tiles_19
+  - first:
+      213: -5665273752192524659
+    second: twilight-tiles_20
+  - first:
+      213: 8636830631076173568
+    second: twilight-tiles_21
+  - first:
+      213: 1201242430610564657
+    second: twilight-tiles_22
+  - first:
+      213: -3766995619153599102
+    second: twilight-tiles_23
+  - first:
+      213: -6625760431071224432
+    second: twilight-tiles_24
+  - first:
+      213: 4221510982819768414
+    second: twilight-tiles_25
+  - first:
+      213: 4380697634549197235
+    second: twilight-tiles_26
+  - first:
+      213: 3210791158103997238
+    second: twilight-tiles_27
+  - first:
+      213: 8781809969750180501
+    second: twilight-tiles_28
+  - first:
+      213: 7813608106298547163
+    second: twilight-tiles_29
+  - first:
+      213: -8748685417853669180
+    second: twilight-tiles_30
+  - first:
+      213: 5610801697920766055
+    second: twilight-tiles_31
+  - first:
+      213: -3676519390742217743
+    second: twilight-tiles_32
+  - first:
+      213: 5678894140812797350
+    second: twilight-tiles_33
+  - first:
+      213: 5421148359200016285
+    second: twilight-tiles_34
+  - first:
+      213: 5467028650540791843
+    second: twilight-tiles_35
+  - first:
+      213: -8660439549204332238
+    second: twilight-tiles_36
+  - first:
+      213: -3104938104269925696
+    second: twilight-tiles_37
+  - first:
+      213: 8308628873017829047
+    second: twilight-tiles_38
+  - first:
+      213: -389918766424758068
+    second: twilight-tiles_39
+  - first:
+      213: -2222247351071193461
+    second: twilight-tiles_40
+  - first:
+      213: -8768071032646803107
+    second: twilight-tiles_41
+  - first:
+      213: 5705879054136707346
+    second: twilight-tiles_42
+  - first:
+      213: -4980836591991003161
+    second: twilight-tiles_43
+  - first:
+      213: -2170180768019589019
+    second: twilight-tiles_44
+  - first:
+      213: -4956660020188503675
+    second: twilight-tiles_45
+  - first:
+      213: 7460081776298333315
+    second: twilight-tiles_46
+  - first:
+      213: -8613249118955765724
+    second: twilight-tiles_47
+  - first:
+      213: -7258711532468636258
+    second: twilight-tiles_48
+  - first:
+      213: 2906082027265641536
+    second: twilight-tiles_49
+  - first:
+      213: 6694270208429345351
+    second: twilight-tiles_50
+  - first:
+      213: -6532212476674753956
+    second: twilight-tiles_51
+  - first:
+      213: -4948723667962476684
+    second: twilight-tiles_52
+  - first:
+      213: 1673400819395332825
+    second: twilight-tiles_53
+  - first:
+      213: -8952787133150728015
+    second: twilight-tiles_54
+  - first:
+      213: -1662675859305286176
+    second: twilight-tiles_55
+  - first:
+      213: 5595614748938379741
+    second: twilight-tiles_56
+  - first:
+      213: -5156994976607045159
+    second: twilight-tiles_57
+  - first:
+      213: -1291016810635615479
+    second: twilight-tiles_58
+  - first:
+      213: -188047843445189404
+    second: twilight-tiles_59
+  - first:
+      213: 7962378249346908632
+    second: twilight-tiles_60
+  - first:
+      213: -1913380957744055250
+    second: twilight-tiles_61
+  - first:
+      213: -4353154868223364470
+    second: twilight-tiles_62
+  - first:
+      213: 4367064718447272809
+    second: twilight-tiles_63
+  - first:
+      213: -5730512862295775125
+    second: twilight-tiles_64
+  - first:
+      213: 4991808788952226443
+    second: twilight-tiles_65
+  - first:
+      213: -5630646754929490189
+    second: twilight-tiles_66
+  - first:
+      213: -2748528668930081425
+    second: twilight-tiles_67
+  - first:
+      213: -3905285285582344296
+    second: twilight-tiles_68
+  - first:
+      213: -6874496066115932752
+    second: twilight-tiles_69
+  - first:
+      213: -6123383558515082180
+    second: twilight-tiles_70
+  - first:
+      213: -8476336819857751847
+    second: twilight-tiles_71
+  - first:
+      213: 3135223843044167072
+    second: twilight-tiles_72
+  - first:
+      213: 7835472773700975626
+    second: twilight-tiles_73
+  - first:
+      213: 8700534308026075092
+    second: twilight-tiles_74
+  - first:
+      213: -5209186998582092494
+    second: twilight-tiles_75
+  - first:
+      213: -5360638455180629961
+    second: twilight-tiles_76
+  - first:
+      213: -693461824015189923
+    second: twilight-tiles_77
+  - first:
+      213: 8503478826987461926
+    second: twilight-tiles_78
+  - first:
+      213: 3537512887532388145
+    second: twilight-tiles_79
+  - first:
+      213: -5933738717137295957
+    second: twilight-tiles_80
+  - first:
+      213: 3843548541990031483
+    second: twilight-tiles_81
+  - first:
+      213: 4761988856455736065
+    second: twilight-tiles_82
+  - first:
+      213: -5116330970322449695
+    second: twilight-tiles_83
+  - first:
+      213: -8927264969162129453
+    second: twilight-tiles_84
+  - first:
+      213: 953554081794003514
+    second: twilight-tiles_85
+  - first:
+      213: -1572751011092638919
+    second: twilight-tiles_86
+  - first:
+      213: 3698440031851176463
+    second: twilight-tiles_87
+  - first:
+      213: -7141734061088756224
+    second: twilight-tiles_88
+  - first:
+      213: -7907961613283131928
+    second: twilight-tiles_89
+  - first:
+      213: -6460694581970236173
+    second: twilight-tiles_90
+  - first:
+      213: -3898113512372170435
+    second: twilight-tiles_91
+  - first:
+      213: -8794029580731046651
+    second: twilight-tiles_92
+  - first:
+      213: 8206193331546753137
+    second: twilight-tiles_93
+  - first:
+      213: 7508000742665777510
+    second: twilight-tiles_94
+  - first:
+      213: -3119932807588437160
+    second: twilight-tiles_95
+  - first:
+      213: -449178470327758990
+    second: twilight-tiles_96
+  - first:
+      213: 5798853923985322735
+    second: twilight-tiles_97
+  - first:
+      213: -5966757166097716904
+    second: twilight-tiles_98
+  - first:
+      213: 1541155775715312317
+    second: twilight-tiles_99
+  - first:
+      213: -3350795220751529076
+    second: twilight-tiles_100
+  - first:
+      213: -5214012903329569223
+    second: twilight-tiles_101
+  - first:
+      213: -8470047236910693408
+    second: twilight-tiles_102
+  - first:
+      213: 6725152714326671565
+    second: twilight-tiles_103
+  - first:
+      213: 4452559032658212637
+    second: twilight-tiles_104
+  - first:
+      213: -2386247068461693272
+    second: twilight-tiles_105
+  - first:
+      213: 3547411365050728167
+    second: twilight-tiles_106
+  - first:
+      213: -8926890693811975485
+    second: twilight-tiles_107
+  - first:
+      213: -2702379646875176588
+    second: twilight-tiles_108
+  - first:
+      213: -9149164322318013209
+    second: twilight-tiles_109
+  - first:
+      213: 4624970164993246759
+    second: twilight-tiles_110
+  - first:
+      213: 4495988606393845315
+    second: twilight-tiles_111
+  - first:
+      213: -5453100563317453635
+    second: twilight-tiles_112
+  - first:
+      213: 4171672812629678350
+    second: twilight-tiles_113
+  - first:
+      213: -7823114317579067955
+    second: twilight-tiles_114
+  - first:
+      213: -4174171934931648142
+    second: twilight-tiles_115
+  - first:
+      213: 8906788744364328459
+    second: twilight-tiles_116
+  - first:
+      213: 4732274799331159462
+    second: twilight-tiles_117
+  - first:
+      213: -3197853866857650568
+    second: twilight-tiles_118
+  - first:
+      213: -7417007664240018688
+    second: twilight-tiles_119
+  - first:
+      213: -2628771513884716747
+    second: twilight-tiles_120
+  - first:
+      213: -7521051499136483697
+    second: twilight-tiles_121
+  - first:
+      213: 7754708638367152063
+    second: twilight-tiles_122
+  - first:
+      213: -6795050347820424171
+    second: twilight-tiles_123
+  - first:
+      213: -5378948346593401019
+    second: twilight-tiles_124
+  - first:
+      213: 4690478211381645921
+    second: twilight-tiles_125
+  - first:
+      213: -4733807002137865486
+    second: twilight-tiles_126
+  - first:
+      213: -4348562902748135182
+    second: twilight-tiles_127
+  - first:
+      213: 1084925783293497124
+    second: twilight-tiles_128
+  - first:
+      213: 3648757699044188251
+    second: twilight-tiles_129
+  - first:
+      213: 1287559082380887824
+    second: twilight-tiles_130
+  - first:
+      213: -4420907469769406324
+    second: twilight-tiles_131
+  - first:
+      213: -1759696838595532742
+    second: twilight-tiles_132
+  - first:
+      213: -1835290641105936790
+    second: twilight-tiles_133
+  - first:
+      213: -6897604716449024917
+    second: twilight-tiles_134
+  - first:
+      213: 5007690427248065107
+    second: twilight-tiles_135
+  - first:
+      213: 2472583133290155616
+    second: twilight-tiles_136
+  - first:
+      213: -1093761311760821813
+    second: twilight-tiles_137
+  - first:
+      213: -7248058214570526105
+    second: twilight-tiles_138
+  - first:
+      213: -5485690125619423894
+    second: twilight-tiles_139
+  - first:
+      213: 1722419655431949215
+    second: twilight-tiles_140
+  - first:
+      213: 7088374706066593426
+    second: twilight-tiles_141
+  - first:
+      213: 1822783595626786423
+    second: twilight-tiles_142
+  - first:
+      213: 5613115285404116974
+    second: twilight-tiles_143
+  - first:
+      213: 7991263507957025081
+    second: twilight-tiles_144
+  - first:
+      213: -7928342185317779583
+    second: twilight-tiles_145
+  - first:
+      213: -1714023208738822693
+    second: twilight-tiles_146
+  - first:
+      213: -6243168675805081500
+    second: twilight-tiles_147
+  - first:
+      213: 5556599231861374294
+    second: twilight-tiles_148
+  - first:
+      213: -1681279061028243241
+    second: twilight-tiles_149
+  - first:
+      213: 9193356708587243933
+    second: twilight-tiles_150
+  - first:
+      213: -5680827211624344148
+    second: twilight-tiles_151
+  - first:
+      213: 4732786927252557102
+    second: twilight-tiles_152
+  - first:
+      213: -7100172066410825448
+    second: twilight-tiles_153
+  - first:
+      213: -1765553487872467930
+    second: twilight-tiles_154
+  - first:
+      213: 2618552805410698255
+    second: twilight-tiles_155
+  - first:
+      213: 1614722496619353257
+    second: twilight-tiles_156
+  - first:
+      213: -7943041292572790215
+    second: twilight-tiles_157
+  - first:
+      213: 3866018490275605081
+    second: twilight-tiles_158
+  - first:
+      213: -6629152021189066373
+    second: twilight-tiles_159
+  - first:
+      213: 8939728337447358920
+    second: twilight-tiles_160
+  - first:
+      213: -6005280080083368119
+    second: twilight-tiles_161
+  - first:
+      213: -4693434658324263048
+    second: twilight-tiles_162
+  - first:
+      213: -7663694801972193626
+    second: twilight-tiles_163
+  - first:
+      213: -8828652756424694375
+    second: twilight-tiles_164
+  - first:
+      213: -420169990729442833
+    second: twilight-tiles_165
+  - first:
+      213: -1113714081578244764
+    second: twilight-tiles_166
+  - first:
+      213: -1379295989006589983
+    second: twilight-tiles_167
+  - first:
+      213: 6289232634712755279
+    second: twilight-tiles_168
+  - first:
+      213: 406003382493851900
+    second: twilight-tiles_169
+  - first:
+      213: 5835505836940763111
+    second: twilight-tiles_170
+  - first:
+      213: 2918961475435984872
+    second: twilight-tiles_171
+  - first:
+      213: 8981959383732414195
+    second: twilight-tiles_172
+  - first:
+      213: -9150412274190695033
+    second: twilight-tiles_173
+  - first:
+      213: -4697525760578672938
+    second: twilight-tiles_174
+  - first:
+      213: -7841532344577148630
+    second: twilight-tiles_175
+  - first:
+      213: 4743310976052419345
+    second: twilight-tiles_176
+  - first:
+      213: -6944825560054071993
+    second: twilight-tiles_177
+  - first:
+      213: 1312229197948886406
+    second: twilight-tiles_178
+  - first:
+      213: -4200924528123260824
+    second: twilight-tiles_179
+  - first:
+      213: -7906632623332796498
+    second: twilight-tiles_180
+  - first:
+      213: 8313992230473834536
+    second: twilight-tiles_181
+  - first:
+      213: -9122652485020220688
+    second: twilight-tiles_182
+  - first:
+      213: -5452864058630512825
+    second: twilight-tiles_183
+  - first:
+      213: -703164320679861345
+    second: twilight-tiles_184
+  - first:
+      213: -1757050405325224845
+    second: twilight-tiles_185
+  - first:
+      213: -1516585114519989646
+    second: twilight-tiles_186
+  - first:
+      213: -6939514527239795211
+    second: twilight-tiles_187
+  - first:
+      213: 3653372063499977586
+    second: twilight-tiles_188
+  - first:
+      213: 9202059251099461146
+    second: twilight-tiles_189
+  - first:
+      213: 7033256352544854695
+    second: twilight-tiles_190
+  - first:
+      213: 782609587137922000
+    second: twilight-tiles_191
+  - first:
+      213: -1713722641520236144
+    second: twilight-tiles_192
+  - first:
+      213: 4992140752140373394
+    second: twilight-tiles_193
+  - first:
+      213: -2971987428836282515
+    second: twilight-tiles_194
+  - first:
+      213: -3771022593835747734
+    second: twilight-tiles_195
+  - first:
+      213: -146706159429708388
+    second: twilight-tiles_196
+  - first:
+      213: -7810016886574497078
+    second: twilight-tiles_197
+  - first:
+      213: 3912504186028440779
+    second: twilight-tiles_198
+  - first:
+      213: -4562027296414174112
+    second: twilight-tiles_199
+  - first:
+      213: -1502938024739231971
+    second: twilight-tiles_200
+  - first:
+      213: -6151225192469895616
+    second: twilight-tiles_201
+  - first:
+      213: -9095776667664129032
+    second: twilight-tiles_202
+  - first:
+      213: 8183094238472536326
+    second: twilight-tiles_203
+  - first:
+      213: 6395288330774452805
+    second: twilight-tiles_204
+  - first:
+      213: 5596080892852421371
+    second: twilight-tiles_205
+  - first:
+      213: -1477771058202545443
+    second: twilight-tiles_206
+  - first:
+      213: 3518140978797133511
+    second: twilight-tiles_207
+  - first:
+      213: 7444103592017605348
+    second: twilight-tiles_208
+  - first:
+      213: 2873965710593081065
+    second: twilight-tiles_209
+  - first:
+      213: -1973963063765806732
+    second: twilight-tiles_210
+  - first:
+      213: 4713662559468044765
+    second: twilight-tiles_211
+  - first:
+      213: -866957087962456788
+    second: twilight-tiles_212
+  - first:
+      213: -7780593183930727324
+    second: twilight-tiles_213
+  - first:
+      213: 5513015695284754606
+    second: twilight-tiles_214
+  - first:
+      213: 4211153558575676250
+    second: twilight-tiles_215
+  - first:
+      213: 3499447614820677116
+    second: twilight-tiles_216
+  - first:
+      213: 208724219183223754
+    second: twilight-tiles_217
+  - first:
+      213: -810112986289766161
+    second: twilight-tiles_218
+  - first:
+      213: -5074784888660604345
+    second: twilight-tiles_219
+  - first:
+      213: 287329020438108972
+    second: twilight-tiles_220
+  - first:
+      213: -6410478531717917848
+    second: twilight-tiles_221
+  - first:
+      213: -3636700952329978751
+    second: twilight-tiles_222
+  - first:
+      213: 7859273538957679204
+    second: twilight-tiles_223
+  - first:
+      213: -2113161469439240207
+    second: twilight-tiles_224
+  - first:
+      213: 5827879418890338508
+    second: twilight-tiles_225
+  - first:
+      213: 6858708977328052418
+    second: twilight-tiles_226
+  - first:
+      213: 1484572290175964993
+    second: twilight-tiles_227
+  - first:
+      213: 609314959185800843
+    second: twilight-tiles_228
+  - first:
+      213: -2080073741726530575
+    second: twilight-tiles_229
+  - first:
+      213: 5251252155355483670
+    second: twilight-tiles_230
+  - first:
+      213: 2307290572577611417
+    second: twilight-tiles_231
+  - first:
+      213: -6561979626997699158
+    second: twilight-tiles_232
+  - first:
+      213: -7301318673281095020
+    second: twilight-tiles_233
+  - first:
+      213: 7931083226459195831
+    second: twilight-tiles_234
+  - first:
+      213: -6244294526395512328
+    second: twilight-tiles_235
+  - first:
+      213: 4024106756721911277
+    second: twilight-tiles_236
+  - first:
+      213: 8004865837484012167
+    second: twilight-tiles_237
+  - first:
+      213: 2258168695646640398
+    second: twilight-tiles_238
+  - first:
+      213: -4805190395838564619
+    second: twilight-tiles_239
+  - first:
+      213: -796819314022018783
+    second: twilight-tiles_240
+  - first:
+      213: 912854751299464181
+    second: twilight-tiles_241
+  - first:
+      213: 1829156393140668654
+    second: twilight-tiles_242
+  - first:
+      213: -3353555868813105193
+    second: twilight-tiles_243
+  - first:
+      213: -110659097961336584
+    second: twilight-tiles_244
+  - first:
+      213: 7056941155097549303
+    second: twilight-tiles_245
+  - first:
+      213: -6829170503949630827
+    second: twilight-tiles_246
+  - first:
+      213: 4462325914778673042
+    second: twilight-tiles_247
+  - first:
+      213: 5560761276167864072
+    second: twilight-tiles_248
+  - first:
+      213: -8094556674928357093
+    second: twilight-tiles_249
+  - first:
+      213: -3877839463476884121
+    second: twilight-tiles_250
+  - first:
+      213: -6024601448306548103
+    second: twilight-tiles_251
+  - first:
+      213: 5782526753817013863
+    second: twilight-tiles_252
+  - first:
+      213: -5016789419322995361
+    second: twilight-tiles_253
+  - first:
+      213: 7832043541528546503
+    second: twilight-tiles_254
+  - first:
+      213: -2084481578243554355
+    second: twilight-tiles_255
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: twilight-tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d34e5c7fb6404c4f9bdca171a51f6f0
+      internalID: -1194648815412178205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ec97d71064a46728291ac23f92ffc7
+      internalID: -5916002697336558481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b286b8c73514769a0c714e0e3362b8
+      internalID: -2106365530219346251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684ceb75e48de453cb56f0f2a5fd6af0
+      internalID: -6244348304254386556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57914aebbaa648e082c37977c3e4c2b
+      internalID: 5125490609276229119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe3ba2218dce44568cb175cd526ebed
+      internalID: 2389202097705884330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b62fe36b5de482e8d943d026200f1f
+      internalID: 3940042661670660477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b885b83b672d495fa49465890485dbe
+      internalID: 7452907181594168173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7675478da7f42438fb94546f90eb50d0
+      internalID: -3773664078212513077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caeaac5f4c764c608ba4593adaae263
+      internalID: -8364101565552345486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d4fea61f09542e29c47764444ca8e0
+      internalID: -4653672329006296926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa171b69812a40d89ea8e177a88abb8
+      internalID: -4277103367590648645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff09456d59bcf428c85496f4c964a217
+      internalID: -8051996081199262540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46add752b5aca40559fa014b0e5f92bc
+      internalID: -8296427591694488098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a615cb052b342bea48ddd3c52a297e
+      internalID: -7080315100131637067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a66b1f211774ee6bcdb36c36f64006
+      internalID: 7311422724621621091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cbc95b4876f4cb1963332915ad80fb
+      internalID: 5734570527505156476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfedecbe4d4474dc5a351dd3cc5112b2
+      internalID: -6178668342730319714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7026ca23488bc466da5c0d55ef14ef80
+      internalID: 6848481922046148209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc25b92be7974082bb9cec38a36e63d
+      internalID: 3502770263718073052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_20
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404c6e12c604f4ccfba6bd1a4a74a204
+      internalID: -5665273752192524659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469fc777ed26f40b8bb4f99b91853dd6
+      internalID: 8636830631076173568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba31b2bad2b0342fa9b470a50cc06ac8
+      internalID: 1201242430610564657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c82f9819f4942c6afa45c6e17a5200
+      internalID: -3766995619153599102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36096a940876b48fc9447204a46e262a
+      internalID: -6625760431071224432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54603986127e4406ca74681cf9b8c0d9
+      internalID: 4221510982819768414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0d97b1eaa80491f915cbd250481b53
+      internalID: 4380697634549197235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12adb262fd5fa4d299d2463833e7889b
+      internalID: 3210791158103997238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434cb286367ee4ef3ab71a2abe81f513
+      internalID: 8781809969750180501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4369d1c06cca48fb93d657f76e8e9e9
+      internalID: 7813608106298547163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c2bb02ba26e4b1bac33560a71a3002
+      internalID: -8748685417853669180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1bcf847207b4b438ddd994b3123b82
+      internalID: 5610801697920766055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6939de8f488024946acc01865898c907
+      internalID: -3676519390742217743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5257a8fe1a3544adc8c858f4982db400
+      internalID: 5678894140812797350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_34
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfef3660e0394feba574f643a913194
+      internalID: 5421148359200016285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2848a49d1316147098191d3c5274a133
+      internalID: 5467028650540791843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_36
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc026518186db4398ac0742c44ffe433
+      internalID: -8660439549204332238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5389954b8eb489bafca2cc7a567183
+      internalID: -3104938104269925696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_38
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8d832dd6e6041e7a013c4677ef3780
+      internalID: 8308628873017829047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbf2ef35013c4eaaa94a46ecc00e727
+      internalID: -389918766424758068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f11477a650f46f88b1634a9f7e38ef
+      internalID: -2222247351071193461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c37d6d83fe0e4c599101f91e3f5c5a8
+      internalID: -8768071032646803107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4cfe12476a84e7aaad782c231d447a
+      internalID: 5705879054136707346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cc87774d5c1440086c3a7757137467
+      internalID: -4980836591991003161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_44
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05502ad8efdce4f1f91fe54c5d57c98d
+      internalID: -2170180768019589019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_45
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5ad5d3b0248405186aeaf36f574cb1
+      internalID: -4956660020188503675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8e2c2323ed646a7a7b76fc86249716
+      internalID: 7460081776298333315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_47
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb680426e149f4c18b9ff1660bdb5f7a
+      internalID: -8613249118955765724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_48
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9e8e7386ff84642b9b1f31d6dcd30a
+      internalID: -7258711532468636258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_49
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45eb674173f08472e8b5653b277016b5
+      internalID: 2906082027265641536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_50
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22a0ca11a2e74cf7831400be86d60ad
+      internalID: 6694270208429345351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957e0cb4deeb54758995e9d8ce816dd0
+      internalID: -6532212476674753956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef3a2c6c776a46b0b2a0dc780f7c631
+      internalID: -4948723667962476684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7f2226d89ec4ba5b54fc5e7241c25b
+      internalID: 1673400819395332825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15c02d03a1e04b8cb8f096d8ca2b327
+      internalID: -8952787133150728015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512e73ac2ca384c3f953d993472581c4
+      internalID: -1662675859305286176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58df5bbb4d49c453199df68b4aa69c30
+      internalID: 5595614748938379741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c966146811ec54bdab7e2cf91c17eeba
+      internalID: -5156994976607045159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9aa1b047f83a4f43b91688ae48ddd37
+      internalID: -1291016810635615479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_59
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459005f30d38f4365bff883c767bbb59
+      internalID: -188047843445189404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_60
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eca5a00cdd7140f1b81dd75297a0b38
+      internalID: 7962378249346908632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_61
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59390db7f25a4d9f99065e64743b1bd
+      internalID: -1913380957744055250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0268c8916552b4faf89b11212e6af8fb
+      internalID: -4353154868223364470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_63
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701bad42929c3426b96e68e0d1570eb4
+      internalID: 4367064718447272809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777344251ecba4c8684246795e197bec
+      internalID: -5730512862295775125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_65
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0a83339601242e3a3ae777131b26ac
+      internalID: 4991808788952226443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_66
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9dca16befd04cf796b2e987be9f0f1
+      internalID: -5630646754929490189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_67
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7db800b4fb3a4ad1962903d4c5704f7
+      internalID: -2748528668930081425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56aa4c8357f245ad851fda6f6395ee8
+      internalID: -3905285285582344296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_69
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc365d585bf7a460ca836fd4ca9b4f3c
+      internalID: -6874496066115932752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_70
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88478504d955f4db9b136c391cc82ded
+      internalID: -6123383558515082180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_71
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba9be3fec7d1470a93c626e9cf3789d
+      internalID: -8476336819857751847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0ddb361d73e4d93a12fdec79e44500
+      internalID: 3135223843044167072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_73
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0087158b9e5c546b6b0bb611593c73a2
+      internalID: 7835472773700975626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63aa05830acf445e0a901eb0a1f557c9
+      internalID: 8700534308026075092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d475f6434bb4e25a74cb234d7ecadf
+      internalID: -5209186998582092494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55325fd70e0b64f4dada5306c5549c4d
+      internalID: -5360638455180629961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7b4f77f570c4b198cc65b4d25b9850
+      internalID: -693461824015189923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_78
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85871fc78058e4073944c4e27bffd763
+      internalID: 8503478826987461926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_79
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f15b240e7a8b4bf49dd4229d9669ec7
+      internalID: 3537512887532388145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f1f9208a27045f7b3bc21b41ec1497
+      internalID: -5933738717137295957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_81
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951a4ba7a024542ca9f8befa41406b86
+      internalID: 3843548541990031483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_82
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395204d0a0abb4ab3a45cbcf93f53a2d
+      internalID: 4761988856455736065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_83
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c63b2a555e9b4aa6b39726ba9bb5879
+      internalID: -5116330970322449695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_84
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c60234a7aae4581b8fb85282dda45e
+      internalID: -8927264969162129453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_85
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2193e4ccb9804fe395a7ea7b41e786a
+      internalID: 953554081794003514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_86
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a77d652c335b402099c4db3a2cae1de
+      internalID: -1572751011092638919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_87
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acb524fa93374c6195ab823ce248bdd
+      internalID: 3698440031851176463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4070198a6ef44f72b25d9118ca73ae2
+      internalID: -7141734061088756224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_89
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82c4e9e331f64b3c98c3a04315c58cd
+      internalID: -7907961613283131928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cff4dacd11b4659a0d2b00f7ca757c
+      internalID: -6460694581970236173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_91
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50394bffcf52c4935a0143bbb3b24697
+      internalID: -3898113512372170435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_92
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814ed6693740940aaabeeb0c3f69293c
+      internalID: -8794029580731046651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_93
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e20f993a5e64cbbaa6c9968b5caeb8
+      internalID: 8206193331546753137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_94
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22365e7d6301544a8bd358c1cc966bfb
+      internalID: 7508000742665777510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_95
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e321fe462c7541228064b23697055b9
+      internalID: -3119932807588437160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_96
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3761a4964652b43f29b8209e7f4e78f6
+      internalID: -449178470327758990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072722277afd94e8b89df0057b71dcaa
+      internalID: 5798853923985322735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_98
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49c7ca6e8b584ea89abf44dffec3b94
+      internalID: -5966757166097716904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_99
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c4083db2255486c9cd639bcf2865d5
+      internalID: 1541155775715312317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_100
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76feb5dfcefb446a9049a6ec47100b2
+      internalID: -3350795220751529076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b98a039d1a6f47caa8a9944dff4f89e
+      internalID: -5214012903329569223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_102
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71021dc335cd4814a10c44701b15127
+      internalID: -8470047236910693408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5577053575229484896333fabbedf588
+      internalID: 6725152714326671565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_104
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45a419c07cf14a3d984e7cd2801fd70
+      internalID: 4452559032658212637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_105
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ad85d114355401fab1f391876a40c2
+      internalID: -2386247068461693272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e36739b629f84e0fa0ae2a46c0a9e9d
+      internalID: 3547411365050728167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_107
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218ba0e7e8b1f4978998d41b9b3901ff
+      internalID: -8926890693811975485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_108
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3273a751c10a846b188b1fbba4ae6004
+      internalID: -2702379646875176588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_109
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d55f9c67d3df403abd9de72b252ab9d
+      internalID: -9149164322318013209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38857c0da2153400db3cf5adf1e1f458
+      internalID: 4624970164993246759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_111
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898d657193d324991b5dc880a92fccf9
+      internalID: 4495988606393845315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f6dd3bafbfe4091b8acc96e755c6fa
+      internalID: -5453100563317453635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_113
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28519960a36a549f9baf65ed13abdeac
+      internalID: 4171672812629678350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_114
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af21d1e4edad4da0a2f1cba094eb9f5
+      internalID: -7823114317579067955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_115
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a711a9ce94fc44d892308a09f658cee
+      internalID: -4174171934931648142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: twilight-tiles_116
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1528a79e94d4a48f5ae592e7caf97a36
+      internalID: 8906788744364328459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
