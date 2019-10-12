@@ -29,7 +29,7 @@ public class GUI_manager : MonoBehaviour
     public GameObject itemPanel;
     [Space]
 
-    public List<Unit> unitList;
+    public List<Unit> unitList = new List<Unit>();
     public List<Line> Lines;
 
     //private List<GameObject> usableUnitList = new List<GameObject>();
@@ -37,32 +37,60 @@ public class GUI_manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ChangeLine(1);
         foreach (Unit unit in unitList)
         {
             var tmp = Instantiate(blocPrefab, itemPanel.transform);
             tmp.GetComponent<Image>().sprite = unit.sprite;
-            tmp.GetComponent<Button>().onClick.AddListener(() => UnitOnClick(unit.name));
-            //usableUnitList.Add(tmp);
+            tmp.GetComponent<Button>().onClick.AddListener(() => UnitOnClick(unit.id));
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("1")) {
-            ChangeLine(Lines.Find(x => x.id == 1));
-        } else if (Input.GetKeyDown("2")) {
-            ChangeLine(Lines.Find(x => x.id == 2));
-
+        if (Input.GetKeyDown("1"))
+        {
+            ChangeLine(1);
+        }
+        else if (Input.GetKeyDown("2"))
+        {
+            ChangeLine(2);
+        }
+        else if (Input.GetKeyDown("q"))
+        {
+            UnitOnClick(1);
+        }
+        else if (Input.GetKeyDown("w"))
+        {
+            UnitOnClick(2);
+        }
+        else if (Input.GetKeyDown("e"))
+        {
+            UnitOnClick(3);
+        }
+        else if (Input.GetKeyDown("r"))
+        {
+            UnitOnClick(4);
+        }
+        else if (Input.GetKeyDown("t"))
+        {
+            UnitOnClick(5);
         }
     }
 
-    void UnitOnClick(string name) {
-        Debug.Log(name);
+    void UnitOnClick(int id) {
+        Unit unit = unitList.Find(x => x.id == id);
+        if (unit != null) {
+            Debug.Log(unit.name);
+        }
     }
 
-    void ChangeLine(Line line) {
-        curLine = line;
-        lineVisual.GetComponent<Image>().color = line.color;
+    public void ChangeLine(int id) {
+        Line line = Lines.Find(x => x.id == id);
+        if (line != null) {
+            curLine = line;
+            lineVisual.GetComponent<Image>().color = line.color;
+        }
     }
 }
