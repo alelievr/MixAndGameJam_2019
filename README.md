@@ -9,3 +9,5 @@ People dying: https://bigsoundbank.com/detail-0477-wilhelm-scream.html
 UI Elements: https://opengameart.org/content/lpc-pennomis-ui-elements
 
 Font: https://www.fontsquirrel.com/fonts/Silkscreen?q%5Bterm%5D=pixel&q%5Bsearch_check%5D=Y
+
+Tiles: https://opengameart.org/content/castle-tiles-for-rpgs, https://opengameart.org/content/castle-platformer
