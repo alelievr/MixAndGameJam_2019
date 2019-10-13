@@ -12,7 +12,7 @@ public class Weapon : MonoBehaviour
         animator = GetComponentInParent<Animator> ();
     }
 
-    public int damage = 2;
+    public float damage = 2;
     void OnTriggerEnter (Collider other)
     {
         MeleeUnit hit = other.gameObject.GetComponent<MeleeUnit> ();
@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
         {
             Debug.DrawLine (transform.position, other.transform.position, Color.red, 1f);
             Debug.DrawRay (transform.position, Vector3.up, Color.green);
-            hit.TakeDamage (damage);
+            hit.TakeDamage ((int)(damage * ((tag == "ennemy") ? GameManager.instance.pourcentqgeDegatEnemy : 1f)));
             gameObject.SetActive (false);
             return;
         }
@@ -32,8 +32,8 @@ public class Weapon : MonoBehaviour
             Debug.Log("found a target");
             Debug.DrawLine (transform.position, other.transform.position, Color.red, 1f);
             Debug.DrawRay (transform.position, Vector3.up, Color.green);
-            hitu.TakeDamage (damage);
-            animator.gameObject.GetComponent<MeleeUnit>().TakeDamage(damage/2);
+            hitu.TakeDamage ((int)damage);
+            animator.gameObject.GetComponent<MeleeUnit>().TakeDamage((int)damage/2);
             gameObject.SetActive (false);
             return;
         }

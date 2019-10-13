@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public float laneWidth;
     public float flypos;
     public float ypos;
+    public float pourcentqgeDegatEnemy = 1f;
 
     void Awake ()
     {
