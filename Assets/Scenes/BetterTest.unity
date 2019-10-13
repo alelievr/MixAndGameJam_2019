@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 126079374}
   - component: {fileID: 126079373}
   - component: {fileID: 126079375}
-  - component: {fileID: 126079376}
   m_Layer: 0
   m_Name: BadCastle
   m_TagString: ennemy
@@ -249,21 +248,6 @@ MonoBehaviour:
   fullHealth: 100
   health: 100
   healthBar: {fileID: 290069303}
---- !u!114 &126079376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126079370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71b99f85164046909b5bb9e08b215c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fullHealth: 100
-  health: 100
-  healthBar: {fileID: 0}
 --- !u!1001 &151870475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,6 +456,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143369765430200019, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.285636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143369765430200019, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2412012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143369765430200019, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
         type: 3}
@@ -2420,6 +2419,14 @@ PrefabInstance:
       propertyPath: m_ApplyToSortingLayers.Array.data[3]
       value: 1518553127
       objectReference: {fileID: 0}
+    - target: {fileID: 609378452, guid: 2fe8c0ca2946e4ffeab59444d4ccddac, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417530267, guid: 2fe8c0ca2946e4ffeab59444d4ccddac, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fe8c0ca2946e4ffeab59444d4ccddac, type: 3}
 --- !u!1 &609378450
@@ -2823,7 +2830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullHealth: 100
   health: 100
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1107357714}
 --- !u!1 &1802581170
 GameObject:
   m_ObjectHideFlags: 0

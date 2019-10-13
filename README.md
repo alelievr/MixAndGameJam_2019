@@ -24,3 +24,5 @@ Font: https://www.fontsquirrel.com/fonts/Silkscreen?q%5Bterm%5D=pixel&q%5Bsearch
 Tiles: https://opengameart.org/content/castle-tiles-for-rpgs, https://opengameart.org/content/castle-platformer
 
 Art: https://opengameart.org/content/pine-tree-pack
+
+Caslte: https://free-game-assets.itch.io/free-castle-2d-game-objects

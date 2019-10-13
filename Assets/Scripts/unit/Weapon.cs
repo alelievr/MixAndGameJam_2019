@@ -24,6 +24,8 @@ public class Weapon : MonoBehaviour
             gameObject.SetActive (false);
             return;
         }
+
+
         CastleUnit hitu = other.gameObject.GetComponent<CastleUnit> ();
         if (other.tag != this.gameObject.tag && hitu && other.isTrigger == false)
         {
