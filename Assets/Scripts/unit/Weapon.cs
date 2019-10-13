@@ -22,6 +22,17 @@ public class Weapon : MonoBehaviour
             Debug.DrawRay (transform.position, Vector3.up, Color.green);
             hit.TakeDamage (damage);
             gameObject.SetActive (false);
+            return;
+        }
+        CastleUnit hitu = other.gameObject.GetComponent<CastleUnit> ();
+        if (other.tag != this.gameObject.tag && hitu && other.isTrigger == false)
+        {
+            Debug.Log("found a target");
+            Debug.DrawLine (transform.position, other.transform.position, Color.red, 1f);
+            Debug.DrawRay (transform.position, Vector3.up, Color.green);
+            hitu.TakeDamage (damage);
+            gameObject.SetActive (false);
+            return;
         }
     }
 }
