@@ -4,18 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class Castle : MonoBehaviour
+public class CastleUnit : MonoBehaviour
 {
 
-    public int fullHealth = 100;
-    public int health = 100;
+    public float fullHealth = 100;
+    public float health = 100;
     public Image healthBar;
     SpriteRenderer spriteRenderer;
 
+    void Start()
+    {
+        GameManager.instance.changeMode.AddListener(ToggleViewMode);
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+    }
     // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = health / 100;
+        healthBar.fillAmount = health / 100f;
     }
 
     public void TakeDamage (int dmg)
@@ -24,6 +29,7 @@ public class Castle : MonoBehaviour
         health -= dmg;
         if (health <= 0)
             DeathIsNow ();
+        Debug.Log(health);
 
         // Color the sprite in red as feedback for hit
         spriteRenderer.color = Color.red;
@@ -33,5 +39,17 @@ public class Castle : MonoBehaviour
     void DeathIsNow ()
     {
         Destroy (gameObject);
+    }
+
+    void ToggleViewMode()
+    {
+        if (GameManager.instance.mode == ViewMode.TopDown)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(90, 0, 0);
+        }
     }
 }
