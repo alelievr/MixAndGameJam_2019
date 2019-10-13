@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613216b1c02e34fa28dcc85c17fc0e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
+  damage: 5
 --- !u!1 &632723592
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,10 +364,10 @@ MonoBehaviour:
   boxCol: {fileID: 3557853975439486020}
   takeTwoLane: 0
   isFlying: 0
-  health: 20
-  fullHealth: 20
+  health: 30
+  fullHealth: 30
   type: 0
-  speed: 1
+  speed: 2
   price: 10
   lane: 0
   ps: {fileID: 4966858721765853372}
