@@ -10,6 +10,7 @@ public class MeleeUnit : MonoBehaviour
 
     public BoxCollider boxCol;
     Rigidbody rb;
+    public bool takeTwoLane = false;
     public int health = 10;
 
     public float speed = 1f;
@@ -86,12 +87,19 @@ public class MeleeUnit : MonoBehaviour
         Destroy (gameObject);
     }
 
+    float getYLane(float offset)
+    {
+        if (takeTwoLane)
+            return (-offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * 0.5f));
+        return (-offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
+    }
+
     void ChangeMode ()
     {
         float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, getYLane(offset));
             transform.position = lanepos;
 
         }
@@ -109,7 +117,7 @@ public class MeleeUnit : MonoBehaviour
         float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth / 2);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, getYLane(offset));
             transform.position = lanepos;
 
         }

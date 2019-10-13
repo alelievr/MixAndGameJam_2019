@@ -8,6 +8,7 @@ public enum UnitType
 {
     Melee,
     Bow,
+    chariot,
     // Fly,
     // Tank,
 }
@@ -21,6 +22,7 @@ public class GUI_manager : MonoBehaviour
         public Sprite sprite;
         public string name;
         public GameObject meleeUnit;
+        public int price;
     }
 
     [System.Serializable]
@@ -86,7 +88,7 @@ public class GUI_manager : MonoBehaviour
         }
         else if (Input.GetKeyDown ("e"))
         {
-            // UnitOnClick();
+            UnitOnClick(UnitType.chariot);
         }
         else if (Input.GetKeyDown ("r"))
         {
@@ -103,9 +105,10 @@ public class GUI_manager : MonoBehaviour
     void UnitOnClick (UnitType id)
     {
         Unit unit = unitList.Find (x => x.id == id);
-        if (unit != null)
+        if (unit != null && unit.price >= GameManager.instance.gold)
         {
             Debug.Log (unit.name);
+            GameManager.instance.gold -= unit.price;
             spawner.unitInvoke (unit.meleeUnit, false, curLine.id);
         }
     }
