@@ -125,8 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71b99f85164046909b5bb9e08b215c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullHealth: 100
-  health: 100
+  fullHealth: 500
+  health: 500
   healthBar: {fileID: 6302006821462827770}
 --- !u!1001 &5882125714562128725
 PrefabInstance:
@@ -250,18 +250,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.75
       objectReference: {fileID: 0}
-    - target: {fileID: 492224953010878895, guid: 3ae389f9b3fb14c73968445c603ad230,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 492224953010878895, guid: 3ae389f9b3fb14c73968445c603ad230,
-        type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 492224953536603404, guid: 3ae389f9b3fb14c73968445c603ad230, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ae389f9b3fb14c73968445c603ad230, type: 3}
 --- !u!224 &6302006823076200021 stripped
 RectTransform:

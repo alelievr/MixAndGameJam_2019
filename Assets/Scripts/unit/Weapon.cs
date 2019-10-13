@@ -33,6 +33,7 @@ public class Weapon : MonoBehaviour
             Debug.DrawLine (transform.position, other.transform.position, Color.red, 1f);
             Debug.DrawRay (transform.position, Vector3.up, Color.green);
             hitu.TakeDamage (damage);
+            animator.gameObject.GetComponent<MeleeUnit>().TakeDamage(damage/2);
             gameObject.SetActive (false);
             return;
         }
