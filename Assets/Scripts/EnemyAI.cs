@@ -6,13 +6,14 @@ using System.Linq;
 public enum Strategy
 {
     Easy,
+    Medium,
 }
 
 [RequireComponent(typeof(Spawner))]
 public class EnemyAI : MonoBehaviour
 {
-    public int  startGold = 50;
-    public int         gold;
+    public int          startGold = 50;
+    public int          gold;
 
     public Strategy strategy;
     Spawner         spawner;
@@ -23,6 +24,8 @@ public class EnemyAI : MonoBehaviour
 
     List<MeleeUnit>     enemiesByPrice;
     bool                isSpawning = false;
+
+    public float        spawnTimer = 1.5f;
 
     void Awake()
     {
@@ -35,7 +38,7 @@ public class EnemyAI : MonoBehaviour
     {
         gold = startGold;
         spawner = GetComponent<Spawner>();
-        enemiesByPrice = spawnableEnemies.ToList().OrderBy(m => m.price).ToList();
+        enemiesByPrice = spawnableEnemies.ToList().OrderByDescending(m => m.price).ToList();
     }
 
     void Update()
@@ -46,18 +49,44 @@ public class EnemyAI : MonoBehaviour
             case Strategy.Easy:
                 UpdateEasy();
                 break;
+            case Strategy.Medium:
+                UpdateMedium();
+                break;
         }
     }
 
-    GameObject FindEnemy(UnitType type) => spawnableEnemies.FirstOrDefault(m => m.type == type).gameObject;
+    MeleeUnit FindEnemy(UnitType type) => spawnableEnemies.FirstOrDefault(m => m.type == type);
 
-    IEnumerator Spawn(MeleeUnit enemy)
+    IEnumerator Spawn(MeleeUnit enemy, bool lane, float spawnTimer)
     {
         gold -= enemy.price;
         isSpawning = true;
-        spawner.unitInvoke(enemy.gameObject, true, Random.value > 0.5f ? 0 : 1);
-        yield return new WaitForSeconds(1.5f);
+        spawner.unitInvoke(enemy.gameObject, true, lane ? 0 : 1);
+        yield return new WaitForSeconds(spawnTimer);
         isSpawning = false;
+    }
+
+    IEnumerator SpawnMultiple(List<UnitType> types, bool lane)
+    {
+        isSpawning = true;
+        foreach (var type in types)
+        {
+            var enemy = FindEnemy(type);
+            gold -= enemy.price;
+            spawner.unitInvoke(enemy.gameObject, true, lane ? 0 : 1);
+            yield return new WaitForSeconds(spawnTimer * 1.5f);
+        }
+        isSpawning = false;
+    }
+
+    int GetSquadPrice(List< UnitType > types)
+    {
+        int price = 0;
+
+        foreach (var e in types)
+            price += FindEnemy(e).price;
+
+        return price;
     }
 
     void UpdateEasy()
@@ -69,8 +98,44 @@ public class EnemyAI : MonoBehaviour
 
         foreach (var e in enemiesByPrice)
         {
-            if (gold > e.price * 2)
-                StartCoroutine(Spawn(e));
+            if (gold > e.price * 1.5f)
+            {
+                StartCoroutine(Spawn(e, Random.value > 0.5f, spawnTimer));
+                return;
+            }
+        }
+    }
+
+    List< List< UnitType > > squads = new List<List<UnitType>>
+    {
+        new List<UnitType>{ UnitType.Melee, UnitType.chariot, UnitType.Bow, UnitType.Bow },
+        new List<UnitType>{ UnitType.chariot, UnitType.Bow, UnitType.Bow },
+        new List<UnitType>{ UnitType.griffon, UnitType.Melee },
+        new List<UnitType>{ UnitType.Melee, UnitType.Melee, UnitType.Bow, UnitType.Bow },
+        new List<UnitType>{ UnitType.Melee, UnitType.Melee, UnitType.Bow },
+        new List<UnitType>{ UnitType.Melee, UnitType.Bow },
+    };
+
+    void UpdateMedium()
+    {
+        if (isSpawning)
+            return;
+        
+        // TODO: choose if we defend or attack
+        MediumDefendUpdate();
+    }
+
+    void MediumDefendUpdate()
+    {
+        bool laneToSpawn = GameState.instance.allyUnitsOnLane1.Count > GameState.instance.allyUnitsOnLane2.Count;
+
+        // Spawn a squad:
+        foreach (var squad in squads)
+        {
+            if (gold > GetSquadPrice(squad))
+            {
+                StartCoroutine(SpawnMultiple(squad, laneToSpawn));
+            }
         }
     }
 }
