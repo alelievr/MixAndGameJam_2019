@@ -52,9 +52,22 @@ public class MeleeUnit : MonoBehaviour
             transform.position = new Vector3 (GetSpawnX (), GameManager.instance.ypos + (isFlying? GameManager.instance.flypos : 0), 0);
         }
         GameManager.instance.changeMode.AddListener (ChangeMode);
+        
+        if (lane == 0)
+            GameState.instance.unitsOnLane1.Add(this);
+        else
+            GameState.instance.unitsOnLane2.Add(this);
 
         animator = GetComponent<Animator> ();
         spriteRenderer = GetComponentInChildren<SpriteRenderer> ();
+    }
+
+    void OnDestroy()
+    {
+        if (lane == 0)
+            GameState.instance.unitsOnLane1.Remove(this);
+        else
+            GameState.instance.unitsOnLane2.Remove(this);
     }
 
     float GetSpawnX ()
@@ -103,9 +116,9 @@ public class MeleeUnit : MonoBehaviour
         AudioManager.instance.PlayUnitDying ();
 
         if (tag == "ennemy")
-            GameManager.instance.gold += (int) (price * 1.1f);
+            GameManager.instance.gold += (int) (price * 1.5f);
         else
-            EnemyAI.instance.gold += (int)(price * 1.1f);
+            EnemyAI.instance.gold += (int)(price * 1.2f);
 
         Destroy (gameObject);
     }

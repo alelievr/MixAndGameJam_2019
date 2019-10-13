@@ -87,7 +87,7 @@ public class EnemyAI : MonoBehaviour
             var enemy = FindEnemy(type);
             gold -= enemy.price;
             spawner.unitInvoke(enemy.gameObject, true, lane ? 0 : 1);
-            yield return new WaitForSeconds(spawnTimer * 1.5f);
+            yield return new WaitForSeconds(spawnTimer);
         }
         isSpawning = false;
     }
@@ -148,6 +148,7 @@ public class EnemyAI : MonoBehaviour
             if (gold > GetSquadPrice(squad))
             {
                 StartCoroutine(SpawnMultiple(squad, laneToSpawn));
+                return;
             }
         }
     }
