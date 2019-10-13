@@ -38,6 +38,13 @@ public class CastleUnit : MonoBehaviour
 
     void DeathIsNow ()
     {
+        if (gameObject.tag == "ennemy") {
+            GameManager.instance.Win();
+        }
+        else if (gameObject.tag == "friendly")
+        {
+            GameManager.instance.Lose();
+        }
         Destroy (gameObject);
     }
 

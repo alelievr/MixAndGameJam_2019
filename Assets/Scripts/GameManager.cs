@@ -51,4 +51,14 @@ public class GameManager : MonoBehaviour
             SwitchMode ();
         }
     }
+
+    public void Win()
+    {
+        Debug.Log("WIN !!!!");
+    }
+
+    public void Lose()
+    {
+        Debug.Log("Lose !!!!");
+    }
 }
