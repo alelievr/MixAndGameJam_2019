@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum UnitType
@@ -100,9 +101,9 @@ public class GUI_manager : MonoBehaviour
         {
             UnitOnClick (UnitType.griffon);
         }
-        else if (Input.GetKeyDown ("t"))
+        else if (Input.GetKeyDown ("p"))
         {
-            // UnitOnClick(5);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         goldText.text = GameManager.instance.gold.ToString ();
