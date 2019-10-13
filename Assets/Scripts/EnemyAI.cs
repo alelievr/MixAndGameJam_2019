@@ -29,6 +29,8 @@ public class EnemyAI : MonoBehaviour
 
     public float        spawnTimer = 1.5f;
 
+    bool started = false;
+
     void Awake()
     {
         if (instance != null)
@@ -43,6 +45,7 @@ public class EnemyAI : MonoBehaviour
         enemiesByPrice = spawnableEnemies.ToList().OrderByDescending(m => m.price).ToList();
 
         StartCoroutine(Income());
+        StartCoroutine(Startup());
     }
 
     IEnumerator Income()
@@ -54,8 +57,17 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    IEnumerator Startup()
+    {
+        yield return new WaitForSeconds(4f);
+        started = true;
+    }
+
     void Update()
     {
+        if (!started)
+            return;
+
         switch (strategy)
         {
             default:
