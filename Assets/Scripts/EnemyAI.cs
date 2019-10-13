@@ -12,7 +12,6 @@ public enum Strategy
 public class EnemyAI : MonoBehaviour
 {
     public int  startGold = 50;
-    [HideInInspector]
     public int         gold;
 
     public Strategy strategy;
@@ -57,7 +56,7 @@ public class EnemyAI : MonoBehaviour
         gold -= enemy.price;
         isSpawning = true;
         spawner.unitInvoke(enemy.gameObject, true, Random.value > 0.5f ? 0 : 1);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         isSpawning = false;
     }
 

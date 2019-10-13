@@ -364,8 +364,8 @@ MonoBehaviour:
   boxCol: {fileID: 3557853975439486020}
   takeTwoLane: 0
   isFlying: 0
-  health: 10
-  fullHealth: 10
+  health: 20
+  fullHealth: 20
   type: 0
   speed: 1
   price: 10
