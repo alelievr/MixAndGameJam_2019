@@ -14,6 +14,7 @@ public class MeleeUnit : MonoBehaviour
     public bool isFlying = false;
     public int health = 10;
     public int fullHealth = 10;
+    public UnitType type;
 
     public float speed = 1f;
     int direction = 1;
@@ -65,7 +66,18 @@ public class MeleeUnit : MonoBehaviour
 
     public void Tapping ()
     {
-        AudioManager.instance.PlaySwordClash ();
+        switch (type)
+        {
+            case UnitType.Bow:
+                AudioManager.instance.PlayArrowShooting (); break;
+            case UnitType.chariot:
+                AudioManager.instance.PlaySwordClash (); break;
+            case UnitType.griffon:
+                AudioManager.instance.PlaySwordClash (); break;
+            default:
+            case UnitType.Melee:
+                AudioManager.instance.PlaySwordClash (); break;
+        }
         weapon.SetActive (true);
     }
 
