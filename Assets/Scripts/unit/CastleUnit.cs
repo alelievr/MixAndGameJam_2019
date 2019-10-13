@@ -7,8 +7,8 @@ using DG.Tweening;
 public class CastleUnit : MonoBehaviour
 {
 
-    public float fullHealth = 100;
-    public float health = 100;
+    public float fullHealth = 100f;
+    public float health = 100f;
     public Image healthBar;
     SpriteRenderer spriteRenderer;
 
@@ -20,7 +20,7 @@ public class CastleUnit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = health / 100f;
+        healthBar.fillAmount = health / fullHealth;
     }
 
     public void TakeDamage (int dmg)
