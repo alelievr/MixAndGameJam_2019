@@ -116,7 +116,7 @@ public class MeleeUnit : MonoBehaviour
         AudioManager.instance.PlayUnitDying ();
 
         if (tag == "ennemy")
-            GameManager.instance.gold += (int) (price * 1.5f);
+            GameManager.instance.gold += (int) (price * 1.3f);
         else
             EnemyAI.instance.gold += (int)(price * 1.2f);
 

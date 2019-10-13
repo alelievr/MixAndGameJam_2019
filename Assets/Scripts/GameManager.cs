@@ -36,8 +36,6 @@ public class GameManager : MonoBehaviour
             Destroy (gameObject);
         else
             instance = this;
-
-        DontDestroyOnLoad (this);
     }
 
     public void SwitchMode ()

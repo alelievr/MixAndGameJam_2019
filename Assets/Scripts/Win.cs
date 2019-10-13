@@ -22,7 +22,7 @@ public class Win : MonoBehaviour
     // Update is called once per frame
     void Wination()
     {
-        StartCoroutine(WaitForNext());
-        // transform.GetChild(0).gameObject.SetActive(true);
+        // StartCoroutine(WaitForNext());
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 }
