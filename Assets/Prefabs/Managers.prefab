@@ -208,6 +208,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 53084d77a3f764a5ab69beef2f8a512f, type: 3}
   unitDying:
   - {fileID: 8300000, guid: fbe09507b2b1e4f2f9cfb4f67e88223e, type: 3}
+  invalidActions:
+  - {fileID: 8300000, guid: 3087dab41512f45d3ab1b2858081c99c, type: 3}
+  arrowShoot:
+  - {fileID: 8300000, guid: 94e97e07c35ea47bdbab97ee758d8a4f, type: 3}
+  tankShooting:
+  - {fileID: 8300000, guid: 9bd43749e469e417dbb0593a76aaedf6, type: 3}
+  griffinAttack:
+  - {fileID: 8300000, guid: cfb5837af6f1a4c16afe263b90c156e1, type: 3}
 --- !u!1 &3793583777323202173
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,4 +414,5 @@ MonoBehaviour:
   gold: 50
   laneInterval: 2
   laneWidth: 2
+  flypos: 3
   ypos: -0.5

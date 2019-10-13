@@ -11,7 +11,10 @@ public class MeleeUnit : MonoBehaviour
     public BoxCollider boxCol;
     Rigidbody rb;
     public bool takeTwoLane = false;
+    public bool isFlying = false;
     public int health = 10;
+    public int fullHealth = 10;
+    public UnitType type;
 
     public float speed = 1f;
     int direction = 1;
@@ -24,11 +27,13 @@ public class MeleeUnit : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
 
+    public ParticleSystem ps;
     public GameObject weapon;
 
     // Start is called before the first frame update
     void Start ()
     {
+        health = fullHealth;
         rb = gameObject.GetComponent<Rigidbody> ();
         if (this.gameObject.tag == "friendly")
             direction = 1;
@@ -44,7 +49,7 @@ public class MeleeUnit : MonoBehaviour
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            transform.position = new Vector3 (GetSpawnX (), GameManager.instance.ypos, 0);
+            transform.position = new Vector3 (GetSpawnX (), GameManager.instance.ypos + (isFlying? GameManager.instance.flypos : 0), 0);
         }
         GameManager.instance.changeMode.AddListener (ChangeMode);
 
@@ -62,13 +67,29 @@ public class MeleeUnit : MonoBehaviour
 
     public void Tapping ()
     {
-        AudioManager.instance.PlaySwordClash ();
+        switch (type)
+        {
+            case UnitType.Bow:
+                AudioManager.instance.PlayArrowShooting ();
+                break;
+            case UnitType.chariot:
+                AudioManager.instance.PlayTankShooting ();
+                break;
+            case UnitType.griffon:
+                AudioManager.instance.PlayGriffinAttack ();
+                break;
+            default:
+            case UnitType.Melee:
+                AudioManager.instance.PlaySwordClash ();
+                break;
+        }
         weapon.SetActive (true);
     }
 
     public void TakeDamage (int dmg)
     {
         health -= dmg;
+        ps.Play ();
         if (health <= 0)
             DeathIsNow ();
 
@@ -81,13 +102,13 @@ public class MeleeUnit : MonoBehaviour
     {
         AudioManager.instance.PlayUnitDying ();
 
-        if (tag == "friendly")
+        if (tag == "ennemy")
             GameManager.instance.gold += (int) (price * 1.1f);
 
         Destroy (gameObject);
     }
 
-    float getYLane(float offset)
+    float getYLane (float offset)
     {
         if (takeTwoLane)
             return (-offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * 0.5f));
@@ -99,13 +120,13 @@ public class MeleeUnit : MonoBehaviour
         float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, getYLane(offset));
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, getYLane (offset));
             transform.position = lanepos;
 
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            lanepos = new Vector3 (transform.position.x - 0.3f * direction, GameManager.instance.ypos, 0);
+            lanepos = new Vector3 (transform.position.x - 0.3f * direction, GameManager.instance.ypos + (isFlying? GameManager.instance.flypos : 0), 0);
             transform.position = lanepos;
 
         }
@@ -117,13 +138,13 @@ public class MeleeUnit : MonoBehaviour
         float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth / 2);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, getYLane(offset));
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, getYLane (offset));
             transform.position = lanepos;
 
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, 0);
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos + (isFlying? GameManager.instance.flypos : 0), 0);
             transform.position = lanepos;
 
         }

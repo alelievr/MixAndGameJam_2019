@@ -9,6 +9,14 @@ Sword SFX: https://freesound.org/people/audione/sounds/52458/, https://freesound
 
 People dying: https://bigsoundbank.com/detail-0477-wilhelm-scream.html
 
+Arrow shoots: https://freesound.org/people/checholio/sounds/443819/
+
+Tank: https://freesound.org/people/nicStage/sounds/368670/, https://freesound.org/people/qubodup/sounds/168707/
+
+Griffin: https://freesound.org/people/Robinhood76/sounds/100800/
+
+GUI sound: https://freesound.org/people/MultiMax2121/sounds/156859/
+
 UI Elements: https://opengameart.org/content/lpc-pennomis-ui-elements
 
 Font: https://www.fontsquirrel.com/fonts/Silkscreen?q%5Bterm%5D=pixel&q%5Bsearch_check%5D=Y
