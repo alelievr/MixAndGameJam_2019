@@ -1826,6 +1826,7 @@ MonoBehaviour:
       type: 3}
     price: 10
     spawnTime: 1
+    key: q
   - id: 1
     sprite: {fileID: -8953561970649121233, guid: b8fc9298059f94db3b37e2201f539d5a,
       type: 3}
@@ -1834,6 +1835,7 @@ MonoBehaviour:
       type: 3}
     price: 15
     spawnTime: 1
+    key: w
   - id: 2
     sprite: {fileID: 7920555144810264317, guid: 779e4f7e885f843a0b9bba40b1a29986,
       type: 3}
@@ -1842,6 +1844,7 @@ MonoBehaviour:
       type: 3}
     price: 50
     spawnTime: 1
+    key: e
   Lines:
   - id: 0
     color: {r: 1, g: 0, b: 0, a: 1}
