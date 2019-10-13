@@ -20588,6 +20588,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7732437316308930881, guid: 4d95b9ba5ed9745ed8c210784da5f1d5,
+        type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Game2
+      objectReference: {fileID: 0}
     - target: {fileID: 1940229560616154617, guid: 4d95b9ba5ed9745ed8c210784da5f1d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20819,6 +20824,11 @@ PrefabInstance:
         type: 3}
       propertyPath: strategy
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527652710775593682, guid: 6acb0c3eb8ca14cbfaebc15b602cdf57,
+        type: 3}
+      propertyPath: startGold
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6acb0c3eb8ca14cbfaebc15b602cdf57, type: 3}

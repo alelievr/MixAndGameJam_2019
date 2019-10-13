@@ -32,7 +32,7 @@ public class SceneTransition : MonoBehaviour
 			return ;
 		}
 
-		DontDestroyOnLoad(gameObject);
+		// DontDestroyOnLoad(gameObject);
 		instance = this;
 	}
 
