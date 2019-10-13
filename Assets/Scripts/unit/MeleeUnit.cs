@@ -13,6 +13,7 @@ public class MeleeUnit : MonoBehaviour
     public bool takeTwoLane = false;
     public bool isFlying = false;
     public int health = 10;
+    public int fullHealth = 10;
 
     public float speed = 1f;
     int direction = 1;
@@ -30,6 +31,7 @@ public class MeleeUnit : MonoBehaviour
     // Start is called before the first frame update
     void Start ()
     {
+        health = fullHealth;
         rb = gameObject.GetComponent<Rigidbody> ();
         if (this.gameObject.tag == "friendly")
             direction = 1;
