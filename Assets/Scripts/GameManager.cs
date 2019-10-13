@@ -11,7 +11,7 @@ public enum ViewMode
 
 public class GameManager : MonoBehaviour
 {
-    public UnityEvent changeMode = new UnityEvent();
+    public UnityEvent changeMode = new UnityEvent ();
     public static GameManager instance = null;
 
     public Transform playerSpawnPosition;
@@ -19,31 +19,33 @@ public class GameManager : MonoBehaviour
 
     public ViewMode mode { get; private set; } = ViewMode.SideScroll;
 
+    public int gold = 0;
+
     // two lanes are between 0
     public float laneInterval;
     public float laneWidth;
 
-    void Awake()
+    void Awake ()
     {
         if (instance != null)
-            Destroy(gameObject);
+            Destroy (gameObject);
         else
             instance = this;
 
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad (this);
     }
 
-    public void SwitchMode()
+    public void SwitchMode ()
     {
-        changeMode.Invoke();
+        changeMode.Invoke ();
         mode = mode == ViewMode.SideScroll ? ViewMode.TopDown : ViewMode.SideScroll;
     }
 
-    void Update()
+    void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown (KeyCode.S))
         {
-            SwitchMode();
+            SwitchMode ();
         }
     }
 }

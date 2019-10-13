@@ -29,85 +29,93 @@ public class GUI_manager : MonoBehaviour
         public Color color;
     }
 
+    [Header ("Line")]
     public Line curLine;
     public GameObject lineVisual;
     [Space]
 
+    [Header ("Trucs")]
     public GameObject blocPrefab;
     public GameObject itemPanel;
     [Space]
 
-    public List<Unit> unitList = new List<Unit>();
+    [Header ("Units")]
+    public List<Unit> unitList = new List<Unit> ();
     public List<Line> Lines;
+
+    [Space, Header ("Gold")]
+    public Text goldText;
 
     Spawner spawner;
 
     //private List<GameObject> usableUnitList = new List<GameObject>();
 
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
-        ChangeLine(0);
+        ChangeLine (0);
         foreach (Unit unit in unitList)
         {
-            var tmp = Instantiate(blocPrefab, itemPanel.transform);
-            tmp.GetComponent<Image>().sprite = unit.sprite;
-            tmp.GetComponent<Button>().onClick.AddListener(() => UnitOnClick(unit.id));
+            var tmp = Instantiate (blocPrefab, itemPanel.transform);
+            tmp.GetComponent<Image> ().sprite = unit.sprite;
+            tmp.GetComponent<Button> ().onClick.AddListener (() => UnitOnClick (unit.id));
         }
 
-        spawner = GetComponent<Spawner>();
+        spawner = GetComponent<Spawner> ();
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown ("1"))
         {
-            ChangeLine(0);
+            ChangeLine (0);
         }
-        else if (Input.GetKeyDown("2"))
+        else if (Input.GetKeyDown ("2"))
         {
-            ChangeLine(1);
+            ChangeLine (1);
         }
-        else if (Input.GetKeyDown("q"))
+        else if (Input.GetKeyDown ("q"))
         {
-            UnitOnClick(UnitType.Melee);
+            UnitOnClick (UnitType.Melee);
         }
-        else if (Input.GetKeyDown("w"))
+        else if (Input.GetKeyDown ("w"))
         {
-            UnitOnClick(UnitType.Bow);
+            UnitOnClick (UnitType.Bow);
         }
-        else if (Input.GetKeyDown("e"))
+        else if (Input.GetKeyDown ("e"))
         {
             // UnitOnClick();
         }
-        else if (Input.GetKeyDown("r"))
+        else if (Input.GetKeyDown ("r"))
         {
             // UnitOnClick(4);
         }
-        else if (Input.GetKeyDown("t"))
+        else if (Input.GetKeyDown ("t"))
         {
             // UnitOnClick(5);
         }
+
+        goldText.text = GameManager.instance.gold.ToString ();
     }
 
-    void UnitOnClick(UnitType id)
+    void UnitOnClick (UnitType id)
     {
-        Unit unit = unitList.Find(x => x.id == id);
+        Unit unit = unitList.Find (x => x.id == id);
         if (unit != null)
         {
-            Debug.Log(unit.name);
-            spawner.unitInvoke(unit.meleeUnit, false, curLine.id);
+            Debug.Log (unit.name);
+            spawner.unitInvoke (unit.meleeUnit, false, curLine.id);
         }
     }
 
-    public void ChangeLine(int id)
+    public void ChangeLine (int id)
     {
-        Line line = Lines.Find(x => x.id == id);
+        Line line = Lines.Find (x => x.id == id);
         if (line != null)
         {
             curLine = line;
-            lineVisual.GetComponent<Image>().color = line.color;
+            lineVisual.GetComponent<Image> ().color = line.color;
         }
     }
 }

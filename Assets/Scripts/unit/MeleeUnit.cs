@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class MeleeUnit : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class MeleeUnit : MonoBehaviour
 
     public float speed = 1f;
     int direction = 1;
+    public int price = 10;
 
     public int lane = 1;
     Vector3 lanepos;
     bool moving = true;
 
     Animator animator;
+    SpriteRenderer spriteRenderer;
 
     public GameObject weapon;
 
@@ -43,6 +46,7 @@ public class MeleeUnit : MonoBehaviour
         GameManager.instance.changeMode.AddListener(ChangeMode);
 
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     float GetSpawnX()
@@ -65,15 +69,21 @@ public class MeleeUnit : MonoBehaviour
         if (health <= 0)
             DeathIsNow();
 
-        // TODO: feedback when taking damage !
+        // Color the sprite in red as feedback for hit
+        spriteRenderer.color = Color.red;
+        spriteRenderer.DOColor(Color.white, 0.2f);
     }
 
     void DeathIsNow()
     {
         AudioManager.instance.PlayUnitDying();
 
+        if (tag == "friendly")
+            GameManager.instance.gold += (int)(price * 1.1f);
+
         Destroy(gameObject);
     }
+
     void ChangeMode()
     {
         float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth);

@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416301663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.42, y: 0, z: 0}
+  m_LocalPosition: {x: 21.06, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8188166739144552847}
@@ -403,5 +403,6 @@ MonoBehaviour:
       m_Calls: []
   playerSpawnPosition: {fileID: 164386100}
   enemiesSpawnPosition: {fileID: 416301664}
+  gold: 0
   laneInterval: 2
   laneWidth: 15
