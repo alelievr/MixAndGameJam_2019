@@ -403,6 +403,7 @@ MonoBehaviour:
       m_Calls: []
   playerSpawnPosition: {fileID: 164386100}
   enemiesSpawnPosition: {fileID: 416301664}
-  gold: 0
+  gold: 50
   laneInterval: 2
-  laneWidth: 15
+  laneWidth: 2
+  ypos: -0.5

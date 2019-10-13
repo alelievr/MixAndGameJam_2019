@@ -105,7 +105,7 @@ public class GUI_manager : MonoBehaviour
     void UnitOnClick (UnitType id)
     {
         Unit unit = unitList.Find (x => x.id == id);
-        if (unit != null && unit.price >= GameManager.instance.gold)
+        if (unit != null && unit.price <= GameManager.instance.gold)
         {
             Debug.Log (unit.name);
             GameManager.instance.gold -= unit.price;
