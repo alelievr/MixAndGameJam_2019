@@ -120,7 +120,7 @@ public class GUI_manager : MonoBehaviour
                     unitsToSpawnLane1.Enqueue(unit);
             }
             else
-                if (unitsToSpawnLane1.Count > 2)
+                if (unitsToSpawnLane2.Count > 2)
                     AudioManager.instance.PlayInvalidActionSound();
                 else
                     unitsToSpawnLane2.Enqueue(unit);

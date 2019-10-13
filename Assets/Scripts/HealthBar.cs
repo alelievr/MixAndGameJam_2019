@@ -17,10 +17,21 @@ public class HealthBar : MonoBehaviour
     void Update ()
     {
         fillAmount = (float) target.health / (float) target.fullHealth;
-        Debug.Log (fillAmount);
-        bgbar.position = new Vector3 (target.transform.position.x, target.transform.position.y + 1, bgbar.position.z);
-        bar.position = new Vector3 (bar.position.x, target.transform.position.y + 1, bar.position.z);
+        if (GameManager.instance.mode == ViewMode.TopDown)
+        {
+            bgbar.rotation = Quaternion.Euler (90, 0, 0);
+            bar.rotation = Quaternion.Euler (90, 0, 0);
+            bgbar.position = new Vector3 (bgbar.transform.position.x, 0, target.transform.position.z + 1);
+            bar.position = new Vector3 (bar.position.x, 0, target.transform.position.z + 1);
+
+        }
+        if (GameManager.instance.mode == ViewMode.SideScroll)
+        {
+            bgbar.rotation = Quaternion.Euler (0, 0, 0);
+            bar.rotation = Quaternion.Euler (0, 0, 0);
+            bgbar.position = new Vector3 (bgbar.transform.position.x, target.transform.position.y + 1, 0);
+            bar.position = new Vector3 (bar.position.x, target.transform.position.y + 1, 0);
+        }
         bar.localScale = new Vector3 (fillAmount, 1, 1);
-        gameObject.transform.rotation = new Quaternion (Camera.main.transform.rotation.x, 0, 0, 1);
     }
 }

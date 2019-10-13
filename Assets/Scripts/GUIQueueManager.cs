@@ -30,7 +30,7 @@ class GUIQueueManager : MonoBehaviour
 
         if (!isSpawningUnit && lane.Count > 0)
         {
-            StartCoroutine(SpawnUnit(lane.Dequeue()));
+            StartCoroutine(SpawnUnit(lane));
             isSpawningUnit = true;
         }
 
@@ -45,9 +45,10 @@ class GUIQueueManager : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnUnit(GUI_manager.Unit u)
+    IEnumerator SpawnUnit(Queue<GUI_manager.Unit> lane)
     {
         float t = Time.timeSinceLevelLoad;
+        var u  = lane.Peek();
 
         while (Time.timeSinceLevelLoad - t < u.spawnTime)
         {
@@ -56,8 +57,9 @@ class GUIQueueManager : MonoBehaviour
         }
 
         Debug.Log (u.name);
-        manager.spawner.unitInvoke (u.meleeUnit, false, lane1 ? 1 : 2);
+        manager.spawner.unitInvoke (u.meleeUnit, false, lane1 ? 0 : 1);
         queueSlider.value = 0;
         isSpawningUnit = false;
+        lane.Dequeue();
     }
 }

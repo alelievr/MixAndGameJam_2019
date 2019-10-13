@@ -406,4 +406,5 @@ MonoBehaviour:
   gold: 50
   laneInterval: 2
   laneWidth: 2
+  flypos: 3
   ypos: -0.5
