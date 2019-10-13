@@ -73,10 +73,10 @@ public class MeleeUnit : MonoBehaviour
                 AudioManager.instance.PlayArrowShooting ();
                 break;
             case UnitType.chariot:
-                AudioManager.instance.PlaySwordClash ();
+                AudioManager.instance.PlayTankShooting ();
                 break;
             case UnitType.griffon:
-                AudioManager.instance.PlaySwordClash ();
+                AudioManager.instance.PlayGriffinAttack ();
                 break;
             default:
             case UnitType.Melee:

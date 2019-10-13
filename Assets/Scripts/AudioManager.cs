@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip[]  unitDying;
     public AudioClip[]  invalidActions;
     public AudioClip[]  arrowShoot;
+    public AudioClip[]  tankShooting;
+    public AudioClip[]  griffinAttack;
 
     AudioSource source;
 
@@ -32,4 +34,6 @@ public class AudioManager : MonoBehaviour
     public void PlayUnitDying() => PlayRandomAudioClip(unitDying);
     public void PlayInvalidActionSound() => PlayRandomAudioClip(invalidActions);
     public void PlayArrowShooting() => PlayRandomAudioClip(arrowShoot);
+    public void PlayTankShooting() => PlayRandomAudioClip(tankShooting);
+    public void PlayGriffinAttack() => PlayRandomAudioClip(griffinAttack);
 }
