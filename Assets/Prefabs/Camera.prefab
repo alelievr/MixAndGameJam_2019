@@ -576,6 +576,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4940191508456343042}
     m_Modifications:
+    - target: {fileID: 8421213906032841457, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: m_Name
+      value: GUI
+      objectReference: {fileID: 0}
     - target: {fileID: 8421213907723591388, guid: 76fb07f798aff432886022323e3c1e3b,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -584,7 +589,7 @@ PrefabInstance:
     - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
         type: 3}
       propertyPath: unitList.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
         type: 3}
@@ -643,6 +648,33 @@ PrefabInstance:
     - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
         type: 3}
       propertyPath: unitList.Array.data[2].price
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: -1731634792687619116, guid: 7334b1b6d24e042f582d4454b2c054fb,
+        type: 3}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].name
+      value: griffon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].meleeUnit
+      value: 
+      objectReference: {fileID: 8910538271184387349, guid: fc84df69e629142ecbec32e36a219a1f,
+        type: 3}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].price
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
@@ -779,11 +811,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8421213906032841457, guid: 76fb07f798aff432886022323e3c1e3b,
-        type: 3}
-      propertyPath: m_Name
-      value: GUI
       objectReference: {fileID: 0}
     - target: {fileID: 8421213906032841461, guid: 76fb07f798aff432886022323e3c1e3b,
         type: 3}
