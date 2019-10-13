@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     // two lanes are between 0
     public float laneInterval;
     public float laneWidth;
+    public float ypos;
 
     void Awake ()
     {

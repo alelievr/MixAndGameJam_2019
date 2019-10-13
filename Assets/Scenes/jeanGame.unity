@@ -250,6 +250,12 @@ PrefabInstance:
       propertyPath: Lines.Array.data[1].id
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3579526871169598288, guid: da04b13f8f224425a93fd8d45f275abb,
+        type: 3}
+      propertyPath: unitList.Array.data[1].meleeUnit
+      value: 
+      objectReference: {fileID: 8798286062327429910, guid: ce7144ef268514dd1a7a874b729fcb25,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da04b13f8f224425a93fd8d45f275abb, type: 3}
 --- !u!1001 &494210798
@@ -554,6 +560,11 @@ PrefabInstance:
         type: 3}
       propertyPath: laneWidth
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188166739144552844, guid: 14f407cd31af54b27a0a768d891e1d81,
+        type: 3}
+      propertyPath: ypos
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 416301664, guid: 14f407cd31af54b27a0a768d891e1d81, type: 3}
       propertyPath: m_LocalPosition.x

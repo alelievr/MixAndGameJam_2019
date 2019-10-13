@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613216b1c02e34fa28dcc85c17fc0e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 4
 --- !u!1 &2969325133599162811
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,8 +106,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.54, y: 0.67, z: 0.3}
-  m_Center: {x: -0.06, y: 0, z: 0}
+  m_Size: {x: 0.6850102, y: 0.67, z: 0.3}
+  m_Center: {x: -0.13250509, y: 0, z: 0}
 --- !u!114 &2969325133599162804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +123,8 @@ MonoBehaviour:
   boxCol: {fileID: 3557853975439486020}
   health: 10
   speed: 5
-  lane: 2
+  price: 10
+  lane: 0
   weapon: {fileID: 333868446}
 --- !u!54 &2969325133599162802
 Rigidbody:
@@ -171,8 +172,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.2, z: 0.2}
-  m_Center: {x: 0.36, y: 0, z: 0}
+  m_Size: {x: 0.19999999, y: 0.10300797, z: 0.044476226}
+  m_Center: {x: 0.36, y: -0.21950829, z: 0.07776189}
 --- !u!1 &5999260246647050188
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +248,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.75}
+  m_Size: {x: 2, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

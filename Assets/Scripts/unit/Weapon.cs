@@ -16,7 +16,7 @@ public class Weapon : MonoBehaviour
     void OnTriggerEnter (Collider other)
     {
         MeleeUnit hit = other.gameObject.GetComponent<MeleeUnit> ();
-        if (other.tag != this.gameObject.tag && hit)
+        if (other.tag != this.gameObject.tag && hit && other.isTrigger == false)
         {
             Debug.DrawLine (transform.position, other.transform.position, Color.red, 1f);
             Debug.DrawRay (transform.position, Vector3.up, Color.green);

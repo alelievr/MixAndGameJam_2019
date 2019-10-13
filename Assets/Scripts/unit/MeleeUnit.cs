@@ -39,11 +39,11 @@ public class MeleeUnit : MonoBehaviour
         // boxCol.center = new Vector3(direction * boxCol.center.x, boxCol.center.y, boxCol.center.z);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            transform.position = new Vector3 (GetSpawnX (), 0, 0);
+            transform.position = new Vector3 (GetSpawnX (), GameManager.instance.ypos, 0);
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            transform.position = new Vector3 (GetSpawnX (), -1, 0);
+            transform.position = new Vector3 (GetSpawnX (), GameManager.instance.ypos, 0);
         }
         GameManager.instance.changeMode.AddListener (ChangeMode);
 
@@ -91,13 +91,13 @@ public class MeleeUnit : MonoBehaviour
         float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3 (transform.position.x, transform.position.y, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
             transform.position = lanepos;
 
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            lanepos = new Vector3 (transform.position.x - 0.3f * direction, 0, 0);
+            lanepos = new Vector3 (transform.position.x - 0.3f * direction, GameManager.instance.ypos, 0);
             transform.position = lanepos;
 
         }
@@ -109,13 +109,13 @@ public class MeleeUnit : MonoBehaviour
         float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth / 2);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3 (transform.position.x, transform.position.y, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
             transform.position = lanepos;
 
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            lanepos = new Vector3 (transform.position.x, -1, 0);
+            lanepos = new Vector3 (transform.position.x, GameManager.instance.ypos, 0);
             transform.position = lanepos;
 
         }
@@ -126,9 +126,9 @@ public class MeleeUnit : MonoBehaviour
 
     private void OnTriggerStay (Collider other)
     {
-        if (other.gameObject.tag != this.gameObject.tag)
+        if (other.gameObject.tag != this.gameObject.tag && other.isTrigger == false)
         {
-            Debug.Log ("Stay !");
+            //   Debug.Log ("Stay !");
             animator.SetTrigger ("isTapping");
         }
     }
@@ -137,7 +137,8 @@ public class MeleeUnit : MonoBehaviour
     {
         RaycastHit hit;
 
-        Debug.DrawLine (transform.position, new Vector3 (transform.position.x + 0.8f * direction, transform.position.y, transform.position.z), Color.green);
+        Debug.DrawLine (new Vector3 (transform.position.x, transform.position.y, transform.position.z + 0.2f), new Vector3 (transform.position.x + 0.3f * direction, transform.position.y, transform.position.z), Color.green);
+        Debug.DrawRay (transform.position, Vector3.up, Color.blue);
 
         if (Physics.Raycast (transform.position, new Vector3 (1 * direction, 0, 0), out hit, 0.3f) == true)
         {
