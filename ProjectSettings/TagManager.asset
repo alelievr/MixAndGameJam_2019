@@ -52,6 +52,9 @@ TagManager:
   - name: Units
     uniqueID: 1861404021
     locked: 0
+  - name: Blood
+    uniqueID: 3259080671
+    locked: 0
   - name: GUI
     uniqueID: 3593496291
     locked: 0
