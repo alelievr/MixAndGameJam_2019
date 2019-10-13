@@ -23,6 +23,7 @@ public class GUI_manager : MonoBehaviour
         public string name;
         public GameObject meleeUnit;
         public int price;
+        public float spawnTime = 1;
     }
 
     [System.Serializable]
@@ -49,7 +50,10 @@ public class GUI_manager : MonoBehaviour
     [Space, Header ("Gold")]
     public Text goldText;
 
-    Spawner spawner;
+    public Queue< Unit >   unitsToSpawnLane1 = new Queue<Unit>();
+    public Queue< Unit >   unitsToSpawnLane2 = new Queue<Unit>();
+
+    public Spawner spawner;
 
     //private List<GameObject> usableUnitList = new List<GameObject>();
 
@@ -105,11 +109,23 @@ public class GUI_manager : MonoBehaviour
     void UnitOnClick (UnitType id)
     {
         Unit unit = unitList.Find (x => x.id == id);
+
         if (unit != null && unit.price <= GameManager.instance.gold)
         {
-            Debug.Log (unit.name);
+            if (curLine.id == 1)
+            {
+                if (unitsToSpawnLane1.Count > 2)
+                    AudioManager.instance.PlayInvalidActionSound();
+                else
+                    unitsToSpawnLane1.Enqueue(unit);
+            }
+            else
+                if (unitsToSpawnLane1.Count > 2)
+                    AudioManager.instance.PlayInvalidActionSound();
+                else
+                    unitsToSpawnLane2.Enqueue(unit);
+
             GameManager.instance.gold -= unit.price;
-            spawner.unitInvoke (unit.meleeUnit, false, curLine.id);
         }
     }
 

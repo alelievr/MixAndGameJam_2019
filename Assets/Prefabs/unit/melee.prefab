@@ -537,7 +537,7 @@ MonoBehaviour:
   isFlying: 0
   health: 10
   fullHealth: 10
-  speed: 5
+  speed: 1
   price: 10
   lane: 0
   weapon: {fileID: 333868446}
@@ -658,7 +658,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1861404021
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

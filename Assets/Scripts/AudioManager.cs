@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip[]  swordClashes;
     public AudioClip[]  unitDying;
+    public AudioClip[]  invalidActions;
 
     AudioSource source;
 
@@ -28,4 +29,5 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySwordClash() => PlayRandomAudioClip(swordClashes);
     public void PlayUnitDying() => PlayRandomAudioClip(unitDying);
+    public void PlayInvalidActionSound() => PlayRandomAudioClip(invalidActions);
 }

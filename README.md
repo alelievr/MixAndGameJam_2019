@@ -9,6 +9,8 @@ Sword SFX: https://freesound.org/people/audione/sounds/52458/, https://freesound
 
 People dying: https://bigsoundbank.com/detail-0477-wilhelm-scream.html
 
+GUI sound: https://freesound.org/people/MultiMax2121/sounds/156859/
+
 UI Elements: https://opengameart.org/content/lpc-pennomis-ui-elements
 
 Font: https://www.fontsquirrel.com/fonts/Silkscreen?q%5Bterm%5D=pixel&q%5Bsearch_check%5D=Y
