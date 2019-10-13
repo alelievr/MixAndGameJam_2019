@@ -17,7 +17,9 @@ public class GameManager : MonoBehaviour
     public Transform            playerSpawnPosition;
     public Transform            enemiesSpawnPosition;
 
-    public ViewMode            mode { get; private set; } = ViewMode.SideScroll;
+    public ViewMode             mode { get; private set; } = ViewMode.SideScroll;
+
+    public int                  gold = 0;
 
     // two lanes are between 0
     public int      laneInterval;

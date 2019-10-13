@@ -29,16 +29,22 @@ public class GUI_manager : MonoBehaviour
         public Color color;
     }
 
+    [Header("Line")]
     public Line curLine;
     public GameObject lineVisual;
     [Space]
 
+    [Header("Trucs")]
     public GameObject blocPrefab;
     public GameObject itemPanel;
     [Space]
 
+    [Header("Units")]
     public List<Unit> unitList = new List<Unit>();
     public List<Line> Lines;
+
+    [Space, Header("Gold")]
+    public Text       goldText;
 
     Spawner           spawner;
 
@@ -89,6 +95,8 @@ public class GUI_manager : MonoBehaviour
         {
             // UnitOnClick(5);
         }
+
+        goldText.text = GameManager.instance.gold.ToString();
     }
 
     void UnitOnClick(UnitType id) {

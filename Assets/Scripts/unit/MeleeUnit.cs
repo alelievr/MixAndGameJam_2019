@@ -72,8 +72,12 @@ public class MeleeUnit : MonoBehaviour
     {
         AudioManager.instance.PlayUnitDying();
 
+        if (tag == "friendly")
+            GameManager.instance.gold += 10;
+
         Destroy(gameObject);
     }
+
     void ChangeMode()
     {
         if (GameManager.instance.mode == ViewMode.TopDown)
