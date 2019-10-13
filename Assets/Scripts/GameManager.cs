@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public enum ViewMode
 {
@@ -13,6 +14,7 @@ public enum ViewMode
 public class GameManager : MonoBehaviour
 {
     public UnityEvent changeMode = new UnityEvent ();
+    public UnityEvent win = new UnityEvent ();
     public static GameManager instance = null;
 
     public Transform playerSpawnPosition;
@@ -55,10 +57,12 @@ public class GameManager : MonoBehaviour
     public void Win()
     {
         Debug.Log("WIN !!!!");
+        win.Invoke();
     }
 
     public void Lose()
     {
         Debug.Log("Lose !!!!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
