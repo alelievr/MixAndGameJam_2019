@@ -1,19 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
+using System.Linq;
 
 public class KeyPressEvent : MonoBehaviour
 {
+    public KeyCode[]    keys;
     public UnityEvent   callback;
-    public InputAction  input;
 
-    void Start()
+    void Update()
     {
-        input.performed += c => {
+        if (keys.Any(k => Input.GetKeyDown(k)))
             callback.Invoke();
-            Debug.Log("fiuehwgi");
-        };
     }
 }
