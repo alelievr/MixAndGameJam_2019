@@ -27,6 +27,7 @@ public class MeleeUnit : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
 
+    public ParticleSystem ps;
     public GameObject weapon;
 
     // Start is called before the first frame update
@@ -69,14 +70,18 @@ public class MeleeUnit : MonoBehaviour
         switch (type)
         {
             case UnitType.Bow:
-                AudioManager.instance.PlayArrowShooting (); break;
+                AudioManager.instance.PlayArrowShooting ();
+                break;
             case UnitType.chariot:
-                AudioManager.instance.PlayTankShooting(); break;
+                AudioManager.instance.PlayTankShooting ();
+                break;
             case UnitType.griffon:
-                AudioManager.instance.PlayGriffinAttack (); break;
+                AudioManager.instance.PlayGriffinAttack ();
+                break;
             default:
             case UnitType.Melee:
-                AudioManager.instance.PlaySwordClash (); break;
+                AudioManager.instance.PlaySwordClash ();
+                break;
         }
         weapon.SetActive (true);
     }
@@ -84,6 +89,7 @@ public class MeleeUnit : MonoBehaviour
     public void TakeDamage (int dmg)
     {
         health -= dmg;
+        ps.Play ();
         if (health <= 0)
             DeathIsNow ();
 
@@ -98,6 +104,8 @@ public class MeleeUnit : MonoBehaviour
 
         if (tag == "ennemy")
             GameManager.instance.gold += (int) (price * 1.1f);
+        else
+            EnemyAI.instance.gold += (int)(price * 1.1f);
 
         Destroy (gameObject);
     }

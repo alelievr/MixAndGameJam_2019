@@ -12,15 +12,25 @@ public enum Strategy
 public class EnemyAI : MonoBehaviour
 {
     public int  startGold = 50;
-    int         gold;
+    [HideInInspector]
+    public int         gold;
 
     public Strategy strategy;
     Spawner         spawner;
+
+    public static EnemyAI   instance;
 
     public MeleeUnit[]   spawnableEnemies;
 
     List<MeleeUnit>     enemiesByPrice;
     bool                isSpawning = false;
+
+    void Awake()
+    {
+        if (instance != null)
+            Debug.LogError("There are two enemy AI in the scene !");
+        instance = this;
+    }
 
     void Start()
     {
