@@ -108,8 +108,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 72.54559, y: 17.985586, z: 7.1538086}
-  m_Center: {x: 13.133103, y: -2.2484083, z: -3.0769043}
+  m_Size: {x: 72.54559, y: 17.985586, z: 31.03}
+  m_Center: {x: 13.25, y: -2.2484083, z: -3.0769043}
 --- !u!114 &630231950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4143369765430200110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.285635, y: -3.2412016, z: 0.50000006}
+  m_LocalPosition: {x: 9.285636, y: -3.2412016, z: 3.2695713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4143369765914579220}
@@ -749,6 +749,53 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[1].spawnTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[2].spawnTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: -1731634792687619116, guid: 7334b1b6d24e042f582d4454b2c054fb,
+        type: 3}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].name
+      value: griffin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].meleeUnit
+      value: 
+      objectReference: {fileID: 8910538271184387349, guid: fc84df69e629142ecbec32e36a219a1f,
+        type: 3}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].spawnTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421213906032841460, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: unitList.Array.data[3].key
+      value: r
       objectReference: {fileID: 0}
     - target: {fileID: 8421213906032841461, guid: 76fb07f798aff432886022323e3c1e3b,
         type: 3}
