@@ -29,7 +29,7 @@ public class EnemyDebile : MonoBehaviour
 
     GameObject chooseUnit()
     {
-        float rand = Random.Range (0f, totalRatio);
+        float rand = Random.Range(0f, totalRatio);
         foreach (var unit in listToSpawnWithRatio)
         {
             if ((rand -= unit.ratio) < 0)
@@ -42,6 +42,6 @@ public class EnemyDebile : MonoBehaviour
     void Update()
     {
         if (Time.deltaTime > Random.Range(0f, 1f / chanceToSpawnEnemybySecond))
-            spawner.unitInvoke(chooseUnit(), true);
+            spawner.unitInvoke(chooseUnit(), true, 1);
     }
 }

@@ -16,7 +16,7 @@ public class GUI_manager : MonoBehaviour
     [System.Serializable]
     public class Unit
     {
-        public UnitType    id;
+        public UnitType id;
         public Sprite sprite;
         public string name;
         public GameObject meleeUnit;
@@ -40,14 +40,14 @@ public class GUI_manager : MonoBehaviour
     public List<Unit> unitList = new List<Unit>();
     public List<Line> Lines;
 
-    Spawner           spawner;
+    Spawner spawner;
 
     //private List<GameObject> usableUnitList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        ChangeLine(1);
+        ChangeLine(0);
         foreach (Unit unit in unitList)
         {
             var tmp = Instantiate(blocPrefab, itemPanel.transform);
@@ -55,7 +55,7 @@ public class GUI_manager : MonoBehaviour
             tmp.GetComponent<Button>().onClick.AddListener(() => UnitOnClick(unit.id));
         }
 
-        spawner = GetComponent< Spawner >();
+        spawner = GetComponent<Spawner>();
     }
 
     // Update is called once per frame
@@ -63,11 +63,11 @@ public class GUI_manager : MonoBehaviour
     {
         if (Input.GetKeyDown("1"))
         {
-            ChangeLine(1);
+            ChangeLine(0);
         }
         else if (Input.GetKeyDown("2"))
         {
-            ChangeLine(2);
+            ChangeLine(1);
         }
         else if (Input.GetKeyDown("q"))
         {
@@ -91,18 +91,21 @@ public class GUI_manager : MonoBehaviour
         }
     }
 
-    void UnitOnClick(UnitType id) {
+    void UnitOnClick(UnitType id)
+    {
         Unit unit = unitList.Find(x => x.id == id);
         if (unit != null)
         {
             Debug.Log(unit.name);
-            spawner.unitInvoke(unit.meleeUnit, false);
+            spawner.unitInvoke(unit.meleeUnit, false, curLine.id);
         }
     }
 
-    public void ChangeLine(int id) {
+    public void ChangeLine(int id)
+    {
         Line line = Lines.Find(x => x.id == id);
-        if (line != null) {
+        if (line != null)
+        {
             curLine = line;
             lineVisual.GetComponent<Image>().color = line.color;
         }

@@ -16,7 +16,7 @@ public class MeleeUnit : MonoBehaviour
     Vector3 lanepos;
     bool moving = true;
 
-    Animator        animator;
+    Animator animator;
 
     public GameObject weapon;
 
@@ -34,11 +34,11 @@ public class MeleeUnit : MonoBehaviour
         // boxCol.center = new Vector3(direction * boxCol.center.x, boxCol.center.y, boxCol.center.z);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            transform.position = new Vector3(GetSpawnX(), 0, 5 * lane);
+            transform.position = new Vector3(GetSpawnX(), 0, 0);
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            transform.position = new Vector3(GetSpawnX(), 0, 0);
+            transform.position = new Vector3(GetSpawnX(), -1, 0);
         }
         GameManager.instance.changeMode.AddListener(ChangeMode);
 
@@ -64,7 +64,7 @@ public class MeleeUnit : MonoBehaviour
         health -= dmg;
         if (health <= 0)
             DeathIsNow();
-        
+
         // TODO: feedback when taking damage !
     }
 
@@ -76,23 +76,37 @@ public class MeleeUnit : MonoBehaviour
     }
     void ChangeMode()
     {
+        float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth);
         if (GameManager.instance.mode == ViewMode.TopDown)
         {
-            lanepos = new Vector3(0, 0, GameManager.instance.laneInterval * lane);
-            transform.position = new Vector3(transform.position.x - 0.3f * direction, lanepos.y, lanepos.z);
+            lanepos = new Vector3(transform.position.x, transform.position.y, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
+            transform.position = lanepos;
 
         }
         if (GameManager.instance.mode == ViewMode.SideScroll)
         {
-            lanepos = new Vector3(0, 0.5f, 0);
-            transform.position = new Vector3(transform.position.x - 0.3f * direction, lanepos.y, lanepos.z);
+            lanepos = new Vector3(transform.position.x - 0.3f * direction, 0, 0);
+            transform.position = lanepos;
 
         }
     }
     // Update is called once per frame
     void Update()
     {
-         animator.SetBool("isTopDown", GameManager.instance.mode == ViewMode.TopDown);
+        animator.SetBool("isTopDown", GameManager.instance.mode == ViewMode.TopDown);
+        float offset = (GameManager.instance.laneInterval / 2 + GameManager.instance.laneWidth / 2);
+        if (GameManager.instance.mode == ViewMode.TopDown)
+        {
+            lanepos = new Vector3(transform.position.x, transform.position.y, -offset + ((GameManager.instance.laneInterval + GameManager.instance.laneWidth) * lane));
+            transform.position = lanepos;
+
+        }
+        if (GameManager.instance.mode == ViewMode.SideScroll)
+        {
+            lanepos = new Vector3(transform.position.x, -1, 0);
+            transform.position = lanepos;
+
+        }
     }
 
     float atkspeed = 2f;
