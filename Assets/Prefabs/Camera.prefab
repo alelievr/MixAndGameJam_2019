@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Follow: {fileID: 4143369763840619507}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 5
+    OrthographicSize: 8
     NearClipPlane: 0.1
     FarClipPlane: 50
     Dutch: 0
@@ -326,7 +326,7 @@ Camera:
   far clip plane: 50
   field of view: 40
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -710,8 +710,21 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 4143369765430200108}
+    - target: {fileID: 8421213906315590768, guid: 76fb07f798aff432886022323e3c1e3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012089714, guid: 76fb07f798aff432886022323e3c1e3b, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2012089714, guid: 76fb07f798aff432886022323e3c1e3b, type: 3}
       propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114832788, guid: 76fb07f798aff432886022323e3c1e3b, type: 3}
+      propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2114832788, guid: 76fb07f798aff432886022323e3c1e3b, type: 3}
