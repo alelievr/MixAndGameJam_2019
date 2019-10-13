@@ -114,6 +114,8 @@ public class SceneTransition : MonoBehaviour
 	{
 		if (loading == true)
 			yield break;
+
+		yield return new WaitForSeconds(2);
 		
 		loading = true;
 

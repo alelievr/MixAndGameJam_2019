@@ -23,6 +23,6 @@ public class Win : MonoBehaviour
     void Wination()
     {
         StartCoroutine(WaitForNext());
-        transform.GetChild(0).gameObject.SetActive(true);
+        // transform.GetChild(0).gameObject.SetActive(true);
     }
 }

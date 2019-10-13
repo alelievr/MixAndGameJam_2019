@@ -76,11 +76,11 @@ public class GUI_manager : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-        if (Input.GetKeyDown ("1"))
+        if (Input.GetKeyDown (KeyCode.UpArrow))
         {
             ChangeLine (0);
         }
-        else if (Input.GetKeyDown ("2"))
+        else if (Input.GetKeyDown (KeyCode.DownArrow))
         {
             ChangeLine (1);
         }

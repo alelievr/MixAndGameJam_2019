@@ -123,6 +123,7 @@ public class EnemyAI : MonoBehaviour
     {
         new List<UnitType>{ UnitType.Melee, UnitType.chariot, UnitType.Bow, UnitType.Bow },
         new List<UnitType>{ UnitType.chariot, UnitType.Bow, UnitType.Bow },
+        new List<UnitType>{ UnitType.griffon, UnitType.Bow },
         new List<UnitType>{ UnitType.griffon, UnitType.Melee },
         new List<UnitType>{ UnitType.Melee, UnitType.Melee, UnitType.Bow, UnitType.Bow },
         new List<UnitType>{ UnitType.Melee, UnitType.Melee, UnitType.Bow },
