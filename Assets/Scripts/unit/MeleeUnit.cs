@@ -104,6 +104,8 @@ public class MeleeUnit : MonoBehaviour
 
         if (tag == "ennemy")
             GameManager.instance.gold += (int) (price * 1.1f);
+        else
+            EnemyAI.instance.gold += (int)(price * 1.1f);
 
         Destroy (gameObject);
     }

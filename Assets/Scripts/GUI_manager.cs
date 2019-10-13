@@ -24,6 +24,7 @@ public class GUI_manager : MonoBehaviour
         public GameObject meleeUnit;
         public int price;
         public float spawnTime = 1;
+        public string key;
     }
 
     [System.Serializable]
@@ -66,6 +67,8 @@ public class GUI_manager : MonoBehaviour
             var tmp = Instantiate (blocPrefab, itemPanel.transform);
             tmp.GetComponent<Image> ().sprite = unit.sprite;
             tmp.GetComponent<Button> ().onClick.AddListener (() => UnitOnClick (unit.id));
+            tmp.transform.Find("gold").GetComponent<Text>().text = unit.price.ToString();
+            tmp.transform.Find("touch").GetComponent<Text>().text = unit.key;
         }
 
         spawner = GetComponent<Spawner> ();
@@ -110,8 +113,14 @@ public class GUI_manager : MonoBehaviour
     {
         Unit unit = unitList.Find (x => x.id == id);
 
-        if (unit != null && unit.price <= GameManager.instance.gold)
+        if (unit != null)
         {
+            if (unit.price > GameManager.instance.gold)
+            {
+                AudioManager.instance.PlayInvalidActionSound();
+                return;
+            }
+
             if (curLine.id == 1)
             {
                 if (unitsToSpawnLane1.Count > 2)
