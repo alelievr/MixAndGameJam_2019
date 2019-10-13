@@ -9,7 +9,7 @@ public enum UnitType
     Melee,
     Bow,
     chariot,
-    // Fly,
+    griffon,
     // Tank,
 }
 
@@ -88,11 +88,11 @@ public class GUI_manager : MonoBehaviour
         }
         else if (Input.GetKeyDown ("e"))
         {
-            UnitOnClick(UnitType.chariot);
+            UnitOnClick (UnitType.chariot);
         }
         else if (Input.GetKeyDown ("r"))
         {
-            // UnitOnClick(4);
+            UnitOnClick (UnitType.griffon);
         }
         else if (Input.GetKeyDown ("t"))
         {
