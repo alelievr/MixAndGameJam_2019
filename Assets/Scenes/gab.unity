@@ -240,6 +240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1732680003, guid: da04b13f8f224425a93fd8d45f275abb, type: 3}
+      propertyPath: m_BoundingVolume
+      value: 
+      objectReference: {fileID: 1517610752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da04b13f8f224425a93fd8d45f275abb, type: 3}
 --- !u!1001 &494210798
@@ -18335,6 +18339,25 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1517610750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1664302181243921634, guid: da04b13f8f224425a93fd8d45f275abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 327377046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1517610752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517610750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 94.29856, y: 17.985586, z: 10.832649}
+  m_Center: {x: 14.184032, y: -2.2484083, z: -1.237484}
 --- !u!1 &1802581170
 GameObject:
   m_ObjectHideFlags: 0
@@ -18463,25 +18486,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8188166739144552844, guid: 14f407cd31af54b27a0a768d891e1d81,
-        type: 3}
-      propertyPath: laneWidth
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8188166739144552844, guid: 14f407cd31af54b27a0a768d891e1d81,
-        type: 3}
-      propertyPath: ypos
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8188166739144552844, guid: 14f407cd31af54b27a0a768d891e1d81,
-        type: 3}
-      propertyPath: gold
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 416301664, guid: 14f407cd31af54b27a0a768d891e1d81, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 21.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f407cd31af54b27a0a768d891e1d81, type: 3}
