@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour
 
         aim.Translate(Vector3.right * Input.GetAxisRaw("Horizontal"));
         var p = aim.transform.position;
-        p.x = Mathf.Clamp(p.x, cameraCollider.bounds.min.x, cameraCollider.bounds.max.x);
+        p.x = Mathf.Clamp(p.x, cameraCollider.bounds.min.x + 15, cameraCollider.bounds.max.x - 15);
         aim.transform.position = p;
     }
 }

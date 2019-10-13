@@ -58,9 +58,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startGold: 50
+  gold: 0
   strategy: 0
+  incomePerSecond: 1
   spawnableEnemies:
   - {fileID: 8798286062327429913, guid: ce7144ef268514dd1a7a874b729fcb25, type: 3}
   - {fileID: 8798286062327429913, guid: bf1b116e3da604448910237324036db9, type: 3}
   - {fileID: 8910538271184387354, guid: fc84df69e629142ecbec32e36a219a1f, type: 3}
   - {fileID: 2969325133599162804, guid: b7d30c8f47d8e4cdf96391247312e71d, type: 3}
+  spawnTimer: 1.5

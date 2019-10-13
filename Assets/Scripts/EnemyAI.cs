@@ -18,6 +18,8 @@ public class EnemyAI : MonoBehaviour
     public Strategy strategy;
     Spawner         spawner;
 
+    public int      incomePerSecond = 1;
+
     public static EnemyAI   instance;
 
     public MeleeUnit[]   spawnableEnemies;
@@ -39,6 +41,17 @@ public class EnemyAI : MonoBehaviour
         gold = startGold;
         spawner = GetComponent<Spawner>();
         enemiesByPrice = spawnableEnemies.ToList().OrderByDescending(m => m.price).ToList();
+
+        StartCoroutine(Income());
+    }
+
+    IEnumerator Income()
+    {
+        while (true)
+        {
+            gold += incomePerSecond;
+            yield return new WaitForSeconds(1);
+        }
     }
 
     void Update()
