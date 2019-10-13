@@ -278,10 +278,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c71cd8222203455da6abdac4aa3ac71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keys: 0d0000000f01000020000000
   callback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1213230127}
+      - m_Target: {fileID: 1032434702}
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
@@ -292,38 +293,6 @@ MonoBehaviour:
           m_StringArgument: Game
           m_BoolArgument: 0
         m_CallState: 2
-  input:
-    m_Name: Input
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 7eca2a19-a259-4aae-b65e-6723cdce3d28
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 6337d30e-62cc-49c0-a645-8231e0287481
-      m_Path: <Keyboard>/space
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 663cf800-075a-4629-b9d6-4b946a85d02a
-      m_Path: <Keyboard>/enter
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 103e8a87-4097-4f78-a23c-dc6c97665aa5
-      m_Path: <Keyboard>/escape
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input
-      m_Flags: 0
 --- !u!1 &277206128
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +432,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848413623}
   m_CullTransparentMesh: 0
+--- !u!1 &1032434701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032434703}
+  - component: {fileID: 1032434702}
+  m_Layer: 0
+  m_Name: SceneTransition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1032434702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032434701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b92f6864b86c4f92bc8da01aad95637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSound: 0
+  fadeTime: 0.5
+  interuptLoading: 0
+  objectsToFadeTag: FadeTranstion
+  destroyOnNextLoad: 0
+--- !u!4 &1032434703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032434701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.4051466, y: -0.18881202, z: 0.30547523}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1213230126
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +491,6 @@ GameObject:
   - component: {fileID: 1213230130}
   - component: {fileID: 1213230129}
   - component: {fileID: 1213230128}
-  - component: {fileID: 1213230127}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -482,23 +498,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1213230127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213230126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b92f6864b86c4f92bc8da01aad95637, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeSound: 0
-  fadeTime: 0.5
-  interuptLoading: 0
-  objectsToFadeTag: FadeTranstion
-  destroyOnNextLoad: 0
 --- !u!81 &1213230128
 AudioListener:
   m_ObjectHideFlags: 0

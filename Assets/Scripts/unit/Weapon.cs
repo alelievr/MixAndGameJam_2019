@@ -1,26 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    Animator    animator;
+    Animator animator;
 
-    void Start()
+    void Start ()
     {
-        animator = GetComponentInParent<Animator>();
+        animator = GetComponentInParent<Animator> ();
     }
 
     public int damage = 2;
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter (Collider other)
     {
-        MeleeUnit hit = other.gameObject.GetComponent<MeleeUnit>();
-        if (other.tag != this.gameObject.tag && hit)
+        MeleeUnit hit = other.gameObject.GetComponent<MeleeUnit> ();
+        if (other.tag != this.gameObject.tag && hit && other.isTrigger == false)
         {
-            Debug.DrawLine(transform.position, other.transform.position, Color.red, 1f);
-            Debug.DrawRay(transform.position, Vector3.up, Color.green);
-            hit.TakeDamage(damage);
-            gameObject.SetActive(false);
+            Debug.DrawLine (transform.position, other.transform.position, Color.red, 1f);
+            Debug.DrawRay (transform.position, Vector3.up, Color.green);
+            hit.TakeDamage (damage);
+            gameObject.SetActive (false);
         }
     }
 }
