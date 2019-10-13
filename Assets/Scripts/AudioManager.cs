@@ -23,16 +23,16 @@ public class AudioManager : MonoBehaviour
         instance = this;
     }
 
-    void PlayRandomAudioClip(AudioClip[] clips)
+    void PlayRandomAudioClip(AudioClip[] clips, float overrideVolume = 1)
     {
         var clip = clips.OrderBy(b => Random.value).First();
 
-        source.PlayOneShot(clip);
+        source.PlayOneShot(clip, overrideVolume);
     }
 
     public void PlaySwordClash() => PlayRandomAudioClip(swordClashes);
-    public void PlayUnitDying() => PlayRandomAudioClip(unitDying);
-    public void PlayInvalidActionSound() => PlayRandomAudioClip(invalidActions);
+    public void PlayUnitDying() => PlayRandomAudioClip(unitDying, 0.9f);
+    public void PlayInvalidActionSound() => PlayRandomAudioClip(invalidActions, 0.3f);
     public void PlayArrowShooting() => PlayRandomAudioClip(arrowShoot);
     public void PlayTankShooting() => PlayRandomAudioClip(tankShooting);
     public void PlayGriffinAttack() => PlayRandomAudioClip(griffinAttack);

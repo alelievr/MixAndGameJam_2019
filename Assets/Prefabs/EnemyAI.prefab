@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3527652710775593681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3527652710775593684}
+  - component: {fileID: 3527652710775593683}
+  - component: {fileID: 3527652710775593682}
+  m_Layer: 0
+  m_Name: EnemyAI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3527652710775593684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3527652710775593681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7845905, y: 0.14467674, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3527652710775593683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3527652710775593681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422621a75dc8842a7aed322db2d26eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nblane: 2
+--- !u!114 &3527652710775593682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3527652710775593681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6910d3b350c8e416b987a8a2363d03f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startGold: 50
+  strategy: 0
+  spawnableEnemies:
+  - {fileID: 8798286062327429913, guid: ce7144ef268514dd1a7a874b729fcb25, type: 3}
+  - {fileID: 8798286062327429913, guid: bf1b116e3da604448910237324036db9, type: 3}
+  - {fileID: 8910538271184387354, guid: fc84df69e629142ecbec32e36a219a1f, type: 3}
+  - {fileID: 2969325133599162804, guid: b7d30c8f47d8e4cdf96391247312e71d, type: 3}

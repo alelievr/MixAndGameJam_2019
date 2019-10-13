@@ -18,6 +18,9 @@ public class Spawner : MonoBehaviour
             foreach (Transform c in o.transform)
                 c.gameObject.tag = "ennemy";
         }
+        if (lane == 0)
+            GameState.instance.unitsOnLane1.Add(o.GetComponent<MeleeUnit>());
+        else
+            GameState.instance.unitsOnLane2.Add(o.GetComponent<MeleeUnit>());
     }
-
 }

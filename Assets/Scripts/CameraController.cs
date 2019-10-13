@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
-
     public Transform    aim;
+    public BoxCollider  cameraCollider;
     public float        translationSpeed = 0.5f;
     public float        rotationDuration = 0.3f;
 
@@ -37,6 +37,12 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        aim?.Translate(Vector3.right * Input.GetAxisRaw("Horizontal"));
+        if (aim == null)
+            return;
+
+        aim.Translate(Vector3.right * Input.GetAxisRaw("Horizontal"));
+        var p = aim.transform.position;
+        p.x = Mathf.Clamp(p.x, cameraCollider.bounds.min.x, cameraCollider.bounds.max.x);
+        aim.transform.position = p;
     }
 }

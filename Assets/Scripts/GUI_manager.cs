@@ -113,8 +113,14 @@ public class GUI_manager : MonoBehaviour
     {
         Unit unit = unitList.Find (x => x.id == id);
 
-        if (unit != null && unit.price <= GameManager.instance.gold)
+        if (unit != null)
         {
+            if (unit.price > GameManager.instance.gold)
+            {
+                AudioManager.instance.PlayInvalidActionSound();
+                return;
+            }
+
             if (curLine.id == 1)
             {
                 if (unitsToSpawnLane1.Count > 2)
